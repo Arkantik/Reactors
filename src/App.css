@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ______________________________________________________________________ *\
+   Import Local Fonts
+\* ______________________________________________________________________ */
+/* @font-face {
+  font-family: "Cinzel Decorative";
+  font-weight: 700;
+  src: url("../assets/fonts/cinzelDecorative-bold.ttf") format("truetype");
+} */
+
+/* ______________________________________________________________________ *\
+   Custom Tailwind rules
+\* ______________________________________________________________________ */
+
+/* Custom CSS rules for base HTML elements */
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+/* Custom CSS rules for components (.card, .btn, ...) */
+@layer components {
+  .main__container {
+    @apply py-4;
+  }
+
+  .navlink:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Custom CSS rules for utilities (.layout, .shadow, ...) */
+@layer utilities {
+}
+
+/* ______________________________________________________________________ *\
+   Custom CSS rules
+\* ______________________________________________________________________ */

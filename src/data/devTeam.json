@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "firstname": "Hafsa",
+    "lastname": "Aït Ouarraou",
+    "img": "../assets/images/missing-picture.png"
+  },
+  {
+    "id": "2",
+    "firstname": "Denis",
+    "lastname": "Dezest",
+    "img": "../assets/images/profile-denis.jpg"
+  },
+  {
+    "id": "3",
+    "firstname": "Jeremy",
+    "lastname": "Dohin",
+    "img": "../assets/images/missing-picture.png"
+  },
+  {
+    "id": "4",
+    "firstname": "Badis",
+    "lastname": "Beloucif",
+    "img": "../assets/images/missing-picture.png"
+  },
+  {
+    "id": "5",
+    "firstname": "Roxane",
+    "lastname": "Belahcene",
+    "img": "../assets/images/missing-picture.png"
+  }
+]
