@@ -19,7 +19,7 @@ export default function App() {
 			</header>
 			<main className="main__container py-4 px-8">
 				<Routes>
-					<Route path="/reactors/" element={<Home />} />
+					<Route path="/" element={<Home />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/page" element={<Page />} />
