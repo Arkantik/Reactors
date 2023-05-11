@@ -26,7 +26,7 @@ export default function Navbar() {
 					</li>
 					<li>
 						<NavLink
-							to="/page"
+							to="/destinations"
 							className={({ isActive }) =>
 								`navlink ${isActive ? "is-active" : ""}`
 							}>
