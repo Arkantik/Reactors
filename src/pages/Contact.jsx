@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import emailjs from "emailjs-com";
+import "./Contact.css"
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -63,9 +64,8 @@ export default function Contact() {
 
   return (
     <>
-      <h1>Contact us</h1>
-
-      <div>
+      <div className="form">
+        <h1>Contact us</h1>
         <form className="" ref={form} onSubmit={sendEmail}>
           <div className="">
             <input
