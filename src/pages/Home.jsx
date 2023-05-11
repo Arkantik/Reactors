@@ -1,6 +1,7 @@
 import axios from "axios";
-
 import { useEffect, useState } from "react";
+
+import SimpleGlobe from "../components/SimpleGlobe";
 
 import infoDestinations from "../data/data";
 import filterData from "../helpers/filterData";
@@ -50,10 +51,17 @@ export default function Home() {
   }, [destinations]);
 
   return (
-    <section>
-      <h1>Welcome Home</h1>
+    // <section className="h-full grid grid-cols-1 grid-rows-[auto_1fr]">
+    <section className="h-full">
+      <h1 className="text-neutral-50 absolute left-1/2 -translate-x-1/2 pt-8">
+        Need Some Inspiration? Find your next holidays location!
+      </h1>
       {loading ? <p> Loading...</p> : null}
-      {!loading && destinations ? <div> 3D Globe </div> : null}
+      {!loading && destinations ? (
+        <div className="h-full">
+          <SimpleGlobe></SimpleGlobe>
+        </div>
+      ) : null}
     </section>
   );
 }
