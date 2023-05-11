@@ -1,33 +1,9 @@
-import { useState, useEffect } from "react";
-import { useNavigate, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
-	const [recherche, setRecherche] = useState("");
-
-	function onChange(e) {
-		setRecherche(e.target.value);
-	}
-	const navigate = useNavigate();
-
-	function onSearch(e) {
-		e.preventDefault(); /** Evite le rechargement de la page */
-		navigate(`/search/${recherche}`);
-	}
-
 	return (
 		<header>
-			{/* <form onSubmit={onSearch}>
-				<label className="searchbar">
-					<input
-						type="text"
-						placeholder=""
-						name="search"
-						onChange={onChange}
-						value={recherche}
-					/>
-				</label>
-			</form> */}
 			<nav className="px-4">
 				<NavLink to="/">
 					<img
@@ -38,8 +14,8 @@ export default function Navbar() {
 						className="logo-desktop"
 					/>
 				</NavLink>
-				<ul className="flex gap-16 pr-4 font-bold">
-					<li>
+				<ul className="flex gap-16 pr-4 font-bold no-underline">
+					<li className="no-underline">
 						<NavLink
 							to="/"
 							className={({ isActive }) =>
