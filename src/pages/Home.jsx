@@ -12,10 +12,10 @@ export default function Home() {
   // 2. filter data to retain only desired destinations
 
   return (
-    <>
+    <section>
       <h1>Welcome home</h1>
       {loading ? <p> Loading...</p> : null}
       {!loading && data ? <div> 3D Globe </div> : null}
-    </>
+    </section>
   );
 }
