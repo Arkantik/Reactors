@@ -17,31 +17,31 @@
 
 /* Custom CSS rules for base HTML elements */
 @layer base {
-  h1 {
-    @apply text-3xl;
-  }
+	h1 {
+		@apply text-3xl;
+	}
 
-  h2 {
-    @apply text-xl;
-  }
+	h2 {
+		@apply text-xl;
+	}
 
-  button {
-    cursor: pointer;
-  }
+	button {
+		cursor: pointer;
+	}
 }
 
 /* Custom CSS rules for components (.card, .btn, ...) */
 @layer components {
-  .main__container {
-    @apply py-4;
-  }
-  .navlink {
-    border-bottom: 2px solid transparent;
-    padding: 4px 8px;
-  }
-  .navlink:hover {
-    border-bottom: 1px solid;
-  }
+	.main__container {
+		@apply py-4;
+	}
+	.navlink {
+		border-bottom: 2px solid transparent;
+		padding: 4px 8px;
+	}
+	.navlink:hover {
+		border-bottom: 1px solid;
+	}
 }
 
 /* Custom CSS rules for utilities (.layout, .shadow, ...) */
@@ -55,5 +55,5 @@
 /* Code for DevCard */
 
 .card {
-  border: #ffd966ff solid 6px;
+	border: #ffd966ff solid 6px;
 }
