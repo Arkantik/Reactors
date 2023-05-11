@@ -7,15 +7,14 @@ export default function Navbar() {
       <nav className="px-4">
         <NavLink to="/">
           <img
-            // src="../public/assets/images/logo.png"
-            src="../public/assets/images/logo-2.png"
+            src="/assets/images/logo-2.png"
             alt="logo HoliFun"
             width="48"
             height="48"
             className="logo-desktop"
           />
         </NavLink>
-        <ul className="flex gap-16 pr-4 font-bold no-underline">
+        <ul className="hidden md:flex gap-16 pr-4 font-bold no-underline">
           <li className="no-underline">
             <NavLink
               to="/"
@@ -57,6 +56,14 @@ export default function Navbar() {
             </NavLink>
           </li>
         </ul>
+        <button type="button" className="md:hidden">
+          <img
+            src="/assets/icons/menu-hamburger-umbrella.svg"
+            alt="menu hamburger"
+            width="32"
+            height="32"
+          />
+        </button>
       </nav>
     </header>
   );
