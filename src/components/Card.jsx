@@ -1,4 +1,4 @@
-export default function DevCard({}) {
+export default function Card() {
   return (
     <div className=" flex flex-wrap justify-center gap-x-16 gap-y-16">
       <div className=" mobile:w-60 tablet:w-72 desktop:w-80">
@@ -17,6 +17,5 @@ export default function DevCard({}) {
         </div>
       </div>
     </div>
-
   );
 }
