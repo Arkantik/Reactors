@@ -44,6 +44,12 @@ export default function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    if (destinations.length > 0) {
+      localStorage.setItem("destinations", JSON.stringify(destinations));
+    }
+  }, [destinations]);
+
   return (
     // <section className="h-full grid grid-cols-1 grid-rows-[auto_1fr]">
     <section className="h-full">
