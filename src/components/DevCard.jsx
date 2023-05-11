@@ -1,7 +1,7 @@
 export default function DevCard({}) {
   return (
-    <div className=" flex flex-wrap justify-center gap-x-16 gap-y-16">
-      <div className=" mobile:w-60 tablet:w-72 desktop:w-80">
+    // <div className=" flex flex-wrap justify-center gap-x-16 gap-y-16">
+      <div className=" mobile:w-60 tablet:w-72 desktop:w-80 mt-12" >
         <div className="card rounded-md  mobile:h-80 tablet:h-96 desktop:h-96 ">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Clock_Tower_-_Palace_of_Westminster%2C_London_-_May_2007.jpg/640px-Clock_Tower_-_Palace_of_Westminster%2C_London_-_May_2007.jpg"
@@ -16,7 +16,7 @@ export default function DevCard({}) {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
 
   );
 }
