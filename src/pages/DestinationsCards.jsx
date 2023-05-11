@@ -1,10 +1,9 @@
-import DevCard from "../components/DevCard";
+import Card from "../components/Card";
 
-export default function DestinationsCards({  }) {
-    return (
-      <>
-      <DevCard />
-        </>
-    );
-  }
-  
+export default function DestinationsCards() {
+  return (
+    <>
+      <Card />
+    </>
+  );
+}
