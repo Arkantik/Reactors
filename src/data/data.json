@@ -1,11 +1,9 @@
 [
   {
-    "name": {
-      "common": "Thailand"
-    },
-    "city": [
+    "country": "Thailand",
+    "cities": [
       {
-        "cityName": "Bangkok",
+        "name": "Bangkok",
         "picture": {
           "image1": "https://images.pexels.com/photos/1374377/pexels-photo-1374377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
           "image2": "https://images.pexels.com/photos/1929611/pexels-photo-1929611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -28,12 +26,10 @@
   },
 
   {
-    "name": {
-      "common": "Japan"
-    },
-    "city": [
+    "country": "Japan",
+    "cities": [
       {
-        "cityName": "Tokyo",
+        "name": "Tokyo",
         "picture": {
           "image1": "https://www.lyonaeroports.com/sites/default/files/2022-07/Tokyo_header.jpg",
           "image2": "https://www.civitatis.com/blog/wp-content/uploads/2022/11/calle-akihabara-tokio.jpg",
@@ -56,12 +52,10 @@
   },
 
   {
-    "name": {
-      "common": "France"
-    },
-    "city": [
+    "country": "France",
+    "cities": [
       {
-        "cityName": "Paris",
+        "name": "Paris",
         "picture": {
           "image1": "https://res.klook.com/image/upload/Mobile/City/swox6wjsl5ndvkv5jvum.jpg",
           "image2": "https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -83,12 +77,10 @@
     ]
   },
   {
-    "name": {
-      "common": "United Kingdom"
-    },
-    "city": [
+    "country": "United Kingdom",
+    "cities": [
       {
-        "cityName": "London",
+        "name": "London",
         "picture": {
           "image1": "https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
           "image2": "https://images.pexels.com/photos/230794/pexels-photo-230794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -110,12 +102,10 @@
     ]
   },
   {
-    "name": {
-      "common": "Italy"
-    },
-    "city": [
+    "country": "Italy",
+    "cities": [
       {
-        "cityName": "Rome",
+        "name": "Rome",
         "picture": {
           "image1": "https://images.pexels.com/photos/2225442/pexels-photo-2225442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
           "image2": "https://images.pexels.com/photos/753639/pexels-photo-753639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -137,12 +127,10 @@
     ]
   },
   {
-    "name": {
-      "common": "Australia"
-    },
-    "city": [
+    "country": "Australia",
+    "cities": [
       {
-        "cityName": "Canberra",
+        "name": "Canberra",
         "picture": {
           "image1": "https://www.australia-australie.com/wp-content/uploads/2017/01/canberra_06.jpg",
           "image2": "https://cms.canberra.com.au/app/uploads/2022/03/Adam-McGrath-aerial-featured.jpg",
@@ -164,12 +152,10 @@
     ]
   },
   {
-    "name": {
-      "common": "Egypt"
-    },
-    "city": [
+    "country": "Egypt",
+    "cities": [
       {
-        "cityName": "Cairo",
+        "name": "Cairo",
         "picture": {
           "image1": "https://images.pexels.com/photos/3243027/pexels-photo-3243027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
           "image2": "https://images.pexels.com/photos/3873681/pexels-photo-3873681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -191,12 +177,10 @@
     ]
   },
   {
-    "name": {
-      "common": "Morocco"
-    },
-    "city": [
+    "country": "Morocco",
+    "cities": [
       {
-        "cityName": "Rabat",
+        "name": "Rabat",
         "picture": {
           "image1": "https://images.pexels.com/photos/2945595/pexels-photo-2945595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
           "image2": "https://images.pexels.com/photos/13004157/pexels-photo-13004157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -218,12 +202,10 @@
     ]
   },
   {
-    "name": {
-      "common": "Chile"
-    },
-    "city": [
+    "country": "Chile",
+    "cities": [
       {
-        "cityName": "Santiago",
+        "name": "Santiago",
         "picture": {
           "image1": "https://images.pexels.com/photos/3874262/pexels-photo-3874262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
           "image2": "https://images.pexels.com/photos/2017747/pexels-photo-2017747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -245,12 +227,10 @@
     ]
   },
   {
-    "name": {
-      "common": "Canada"
-    },
-    "city": [
+    "country": "Canada",
+    "cities": [
       {
-        "cityName": "Ottawa",
+        "name": "Ottawa",
         "picture": {
           "image1": "https://images.pexels.com/photos/7328/building-architecture-historical-tower.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
           "image2": "https://images.pexels.com/photos/3656756/pexels-photo-3656756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
