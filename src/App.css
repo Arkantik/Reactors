@@ -35,9 +35,12 @@
   .main__container {
     @apply py-4;
   }
-
+  .navlink {
+    border-bottom: 2px solid transparent;
+    padding: 4px 8px;
+  }
   .navlink:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid;
   }
 }
 
@@ -54,6 +57,7 @@
 .card {
   border: #ffd966ff solid 6px;
 }
+<<<<<<< HEAD
 
 
 /* Code for Filter */
@@ -62,3 +66,5 @@
   background-color: #ffd966ff;
 }
 
+=======
+>>>>>>> 43db6375ca3a6d4ea99d793ba1d312a64a0ed74b
