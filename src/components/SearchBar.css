@@ -1,27 +1,15 @@
 label {
-	display: initial;
-	position: relative;
-}
-
-label.searchbar:before {
-	content: "";
-	position: absolute;
-	left: 10px;
-	top: 0;
-	bottom: 0;
-	width: 20px;
-	background: url("/assets/logo/Search.svg") center / contain no-repeat;
-}
-header label {
-	display: initial;
-	position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 input {
-	height: 40px;
-	width: 300px;
-	padding: 10px 30px;
-	background-color: blue;
-	border: 1px solid rgb(111, 110, 110);
-	display: block;
-}
+    height: 40px;
+    width: 300px;
+    padding: 10px 30px;
+    background-color: rgb(222, 222, 230);
+    border: 1px solid rgb(111, 110, 110);
+    border-radius: 5px;
+    color: black;
+  }
+
