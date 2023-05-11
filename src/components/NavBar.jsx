@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
 
     <header>
-      <a href="/">
+      <NavLink to="/">
          <img src="/public/assets/images/logo.png" alt="logo HoliFun" width="50"
           height="30"
           className="logo-desktop" /> 
