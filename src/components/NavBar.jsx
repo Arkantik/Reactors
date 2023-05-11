@@ -3,17 +3,7 @@ import { useNavigate,NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
-  const [recherche, setRecherche] = useState("");
-
-  function onChange(e) {
-    setRecherche(e.target.value);
-  }
-  const navigate = useNavigate();
-
-  function onSearch(e) {
-    e.preventDefault(); /** Evite le rechargement de la page */
-    navigate(`/search/${recherche}`);
-  }
+  
 
   return (
 
@@ -23,17 +13,6 @@ export default function Navbar() {
           height="30"
           className="logo-desktop" /> 
       </NavLink>
-      <form onSubmit={onSearch}>
-        <label className="searchbar">
-          <input
-            type="text"
-            placeholder=""
-            name="search"
-            onChange={onChange}
-            value={recherche}
-          />
-        </label>
-      </form>
       <nav>
       <ul className="navbar">
         <li>
@@ -52,8 +31,8 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink className="navlink" to="/page">
-            Page
+          <NavLink className="navlink" to="/destinations">
+            Destinations
           </NavLink>
         </li>
       </ul>
