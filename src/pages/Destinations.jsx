@@ -1,8 +1,11 @@
 import Card from "../components/Card";
 import FilterBtn from "../components/FilterBtn";
 import SearchBar from "../components/SearchBar";
+import { useEffect } from "react";
 
-export default function DestinationsCards() {
+export default function Destinations() {
+  const destinations = JSON.parse(localStorage.getItem("destinations"));
+
   return (
     <section>
       <h1 className="mb-2 flex justify-center">Destinations</h1>
