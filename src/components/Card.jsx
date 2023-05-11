@@ -5,7 +5,10 @@ export default function Card({ destination }) {
       className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
       style={{ height: "300px", width: "24rem" }}
     >
-      <div className="card-image" style={{ height: '200px', overflow: 'hidden'}}>
+      <div
+        className="card-image"
+        style={{ height: "200px", overflow: "hidden" }}
+      >
         <img
           className="rounded-t-lg"
           src={destination.cities[0].picture.image1}

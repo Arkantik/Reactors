@@ -14,12 +14,12 @@ export default function Destinations() {
       </div>
 
       <ul className="flex flex-wrap justify-center gap-8">
-        {destinations.map((destination, index) =>{
+        {destinations.map((destination, index) => {
           return (
-          <li key={index}>
-            <Card destination={destination} />
-          </li>
-          )
+            <li key={index}>
+              <Card destination={destination} />
+            </li>
+          );
         })}
       </ul>
     </section>
