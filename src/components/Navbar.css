@@ -1,0 +1,9 @@
+.navbar {
+    display: flex;
+    justify-content: right;
+}
+
+li {
+    margin-right: 70px;
+}
+
