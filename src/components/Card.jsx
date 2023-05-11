@@ -1,18 +1,27 @@
-export default function Card() {
+export default function Card({ destination }) {
+  console.log(destination);
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <img
-        className="rounded-t-lg"
-        src="https://media.istockphoto.com/id/1295031273/fr/photo/big-ben-clock-tower-%C3%A0-londres-royaume-uni-par-une-belle-journ%C3%A9e-composition-panoramique-avec.jpg?s=612x612&w=0&k=20&c=oq7cOYglVjV7tipSWFdS-xLQ9J3b_iQy_WjMhs06b2o="
-        alt="big ben"
-      />
-      <div className="p-5">
+    <div
+      className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+      style={{ height: "300px", width: "24rem" }}
+    >
+      <div
+        className="card-image"
+        style={{ height: "200px", overflow: "hidden" }}
+      >
+        <img
+          className="rounded-t-lg"
+          src={destination.cities[0].picture.image1}
+          alt="big ben"
+        />
+      </div>
+      <div className="p-5" style={{ height: "150px" }}>
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          London
+          {destination.cities[0].name}
         </h5>
 
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          United Kingdom
+          {destination.name.common}
         </p>
       </div>
     </div>
