@@ -1,28 +1,17 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
 import "./SearchBar.css";
 
 export default function SearchBar() {
-	const [recherche, setRecherche] = useState("");
-
-	function onChange(e) {
-		setRecherche(e.target.value);
-	}
-	const navigate = useNavigate();
-
-	function onSearch(e) {
-		e.preventDefault(); /** Evite le rechargement de la page */
-		navigate(`/search/${recherche}`);
-	}
+	
 	return (
-		<form onSubmit={onSearch}>
+		<form>
 			<label className="searchbar">
 				<input
 					type="text"
-					placeholder=""
+					placeholder="Destinations"
 					name="search"
-					onChange={onChange}
-					value={recherche}
+					
 				/>
 			</label>
 		</form>

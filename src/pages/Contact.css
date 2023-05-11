@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+textarea {
+    border: 1px solid rgb(111, 110, 110);
+    margin-top: 1rem;
+    height: 150px;
+    width: 300px;
+
+}
+
+input {
+    margin-top: 1rem;
+}
+
+h1 {
+    margin-bottom: 3rem;
+}
