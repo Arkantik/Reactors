@@ -26,6 +26,15 @@ export default function Navbar() {
 					</li>
 					<li>
 						<NavLink
+							to="/page"
+							className={({ isActive }) =>
+								`navlink ${isActive ? "is-active" : ""}`
+							}>
+							Destinations
+						</NavLink>
+					</li>
+					<li>
+						<NavLink
 							to="/contact"
 							className={({ isActive }) =>
 								`navlink ${isActive ? "is-active" : ""}`
@@ -40,15 +49,6 @@ export default function Navbar() {
 								`navlink ${isActive ? "is-active" : ""}`
 							}>
 							About
-						</NavLink>
-					</li>
-					<li>
-						<NavLink
-							to="/page"
-							className={({ isActive }) =>
-								`navlink ${isActive ? "is-active" : ""}`
-							}>
-							Page
 						</NavLink>
 					</li>
 				</ul>
