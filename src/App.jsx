@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Page from "./pages/Page";
+import DestinationsCards from "./pages/DestinationsCards";
 
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -23,6 +24,7 @@ export default function App() {
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/page" element={<Page />} />
+					<Route path="/destinations" element={<DestinationsCards />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</main>
