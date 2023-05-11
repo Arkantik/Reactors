@@ -134,7 +134,6 @@ export default function SimpleGlobe() {
 					width="100vw"
 					options={options}
 					onClickMarker={(marker) => {
-						alert("test!");
 						dispatch({ type: "FOCUS", payload: marker });
 					}}
 					onGlobeTextureLoaded={() => setHasGlobeTextureLoaded(true)}

@@ -8,6 +8,7 @@ import appendData from "../helpers/appendData";
 import ReactGlobe from "react-globe";
 import markers from "../components/Globe-ts/markers";
 import markerRenderer from "../components/Globe-ts/markerRenderer";
+import Details from "../components/Globe-jsx/details";
 
 export default function Home() {
 	const API = import.meta.env.VITE_API;
@@ -46,6 +47,12 @@ export default function Home() {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
+	useEffect(() => {
+		if (destinations.length > 0) {
+			localStorage.setItem("destinations", JSON.stringify(destinations));
+		}
+	}, [destinations]);
+
 	const options = {
 		markerRenderer,
 	};
@@ -72,6 +79,7 @@ export default function Home() {
 						width="100vw"
 						options={options}
 					/>
+					<Details />
 				</div>
 			) : null}
 		</section>

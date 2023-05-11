@@ -18,8 +18,6 @@ export default function App() {
       <header className="py-2 bg-neutral-900 text-neutral-50">
         <NavBar />
       </header>
-      {/* <main className="main__container py-4 px-8"> */}
-      {/* <main className="main__container"> */}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />

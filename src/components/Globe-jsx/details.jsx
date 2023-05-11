@@ -37,7 +37,7 @@ export default function Details() {
 						onClick={() => dispatch({ type: "FOCUS" })}
 					/>
 				</div>
-				<div className="content">
+				<div className="content fixed">
 					<h2>
 						{city}, {countryName} ({value})
 					</h2>
