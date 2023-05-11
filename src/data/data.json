@@ -1,264 +1,254 @@
 [
-	{
-		"name": {
-			"common": "Thailand"
-		},
-		"cities": {
-			"Bangkok": {
-				"picture": {
-					"image1": "https://images.pexels.com/photos/1374377/pexels-photo-1374377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image2": "https://images.pexels.com/photos/1929611/pexels-photo-1929611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image3": "https://images.pexels.com/photos/1682748/pexels-photo-1682748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image4": "https://images.pexels.com/photos/2798256/pexels-photo-2798256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-				},
-				"visit": {
-					"place1": "Wat Arun",
-					"place2": "Jim Thompson's House",
-					"place3": "Grand Palace"
-				},
-				"restaurant": {
-					"restaurant1": "The Sixth - 6 Soi Tha Tien, Maharaj Road. Khet Phra Nakhon area",
-					"restaurant2": "Prachak - 1415, Charoen Krung Road, Silom, opposite Robinson's department store",
-					"restaurant3": "Charoen Saeng Silom - 492/6 Soi Charoen Krung 49"
-				},
-				"weather": "November to February"
-			}
-		}
-	},
+  {
+    "country": "Thailand",
+    "cities": [
+      {
+        "name": "Bangkok",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/1374377/pexels-photo-1374377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image2": "https://images.pexels.com/photos/1929611/pexels-photo-1929611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://images.pexels.com/photos/1682748/pexels-photo-1682748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image4": "https://images.pexels.com/photos/2798256/pexels-photo-2798256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        "visit": {
+          "place1": "Wat Arun",
+          "place2": "Jim Thompson's House",
+          "place3": "Grand Palace"
+        },
+        "restaurant": {
+          "restaurant1": "The Sixth - 6 Soi Tha Tien, Maharaj Road. Khet Phra Nakhon area",
+          "restaurant2": "Prachak - 1415, Charoen Krung Road, Silom, opposite Robinson's department store",
+          "restaurant3": "Charoen Saeng Silom - 492/6 Soi Charoen Krung 49"
+        },
+        "weather": "November to February"
+      }
+    ]
+  },
 
-	{
-		"name": {
-			"common": "Japan"
-		},
-		"cities": {
-			"Tokyo": {
-				"picture": {
-					"image1": "https://www.lyonaeroports.com/sites/default/files/2022-07/Tokyo_header.jpg",
-					"image2": "https://www.civitatis.com/blog/wp-content/uploads/2022/11/calle-akihabara-tokio.jpg",
-					"image3": "https://media.cntraveler.com/photos/62ab85a86df361f5801fd45b/16:9/w_2580,c_limit/Tokyo_GettyImages-1319747119.jpg",
-					"image4": "https://lepetitjournal.com/sites/default/files/2020-05/tour-tokyo-coronavirus-japon.jpg"
-				},
-				"visit": {
-					"place1": "Tsukiji Honganji Temple",
-					"place2": "Nightlife in Shinjuku",
-					"place3": "Nezu Shrine"
-				},
-				"restaurant": {
-					"restaurant1": "Uoriki Kaisen Sushi - 2-24-1 Shibuya, Shibuya City, Tokyo 150-0002",
-					"restaurant2": "Shin Udon - 2-20-16 1F Soma Bldg., Yoyogi, Shibuya, Tokyo 151-0053",
-					"restaurant3": "Yakitori Ton Ton - 2 Chome-1-10 Yurakucho, Chiyoda City, Tokyo 100-0006,"
-				},
-				"weather": "March to April"
-			}
-		}
-	},
+  {
+    "country": "Japan",
+    "cities": [
+      {
+        "name": "Tokyo",
+        "picture": {
+          "image1": "https://www.lyonaeroports.com/sites/default/files/2022-07/Tokyo_header.jpg",
+          "image2": "https://www.civitatis.com/blog/wp-content/uploads/2022/11/calle-akihabara-tokio.jpg",
+          "image3": "https://media.cntraveler.com/photos/62ab85a86df361f5801fd45b/16:9/w_2580,c_limit/Tokyo_GettyImages-1319747119.jpg",
+          "image4": "https://lepetitjournal.com/sites/default/files/2020-05/tour-tokyo-coronavirus-japon.jpg"
+        },
+        "visit": {
+          "place1": "Tsukiji Honganji Temple",
+          "place2": "Nightlife in Shinjuku",
+          "place3": "Nezu Shrine"
+        },
+        "restaurant": {
+          "restaurant1": "Uoriki Kaisen Sushi - 2-24-1 Shibuya, Shibuya City, Tokyo 150-0002",
+          "restaurant2": "Shin Udon - 2-20-16 1F Soma Bldg., Yoyogi, Shibuya, Tokyo 151-0053",
+          "restaurant3": "Yakitori Ton Ton - 2 Chome-1-10 Yurakucho, Chiyoda City, Tokyo 100-0006,"
+        },
+        "weather": "March to April"
+      }
+    ]
+  },
 
-	{
-		"name": {
-			"common": "France"
-		},
-		"cities": {
-			"Paris": {
-				"picture": {
-					"image1": "https://res.klook.com/image/upload/Mobile/City/swox6wjsl5ndvkv5jvum.jpg",
-					"image2": "https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image3": "https://media.timeout.com/images/105983530/image.jpg",
-					"image4": "https://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg?impolicy=fcrop&w=800&h=533&q=medium"
-				},
-				"visit": {
-					"place1": "Eiffel Tower",
-					"place2": "Louvre Museum",
-					"place3": "Versailles Palace"
-				},
-				"restaurant": {
-					"restaurant1": "La Poule Au Pot - 9 rue Vauvilliers, 75001 Paris",
-					"restaurant2": "Le Cadoret - 1 Rue Pradier, 75019 Paris",
-					"restaurant3": "Le Saint Sebastien - 42 rue Saint Sebastien, 75011 Paris"
-				},
-				"weather": "June to August"
-			}
-		}
-	},
-	{
-		"name": {
-			"common": "United Kingdom"
-		},
-		"cities": {
-			"London": {
-				"picture": {
-					"image1": "https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image2": "https://images.pexels.com/photos/230794/pexels-photo-230794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image3": "https://images.pexels.com/photos/813362/pexels-photo-813362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image4": "https://images.pexels.com/photos/2214035/pexels-photo-2214035.jpeg?auto=compress&cs=tinysrgb&w=1600"
-				},
-				"visit": {
-					"place1": "Buckingham Palace",
-					"place2": "The London Eye",
-					"place3": "Westminster Abbey"
-				},
-				"restaurant": {
-					"restaurant1": "Café Cecilia - 32 Andrews Rd, London E8 4RL",
-					"restaurant2": "Quo Vadis - 26-29 Dean Street, London W1D 3LL",
-					"restaurant3": "St John Marylebone - 98 Marylebone Ln, London W1U 2QA"
-				},
-				"weather": "September to November"
-			}
-		}
-	},
-	{
-		"name": {
-			"common": "Italy"
-		},
-		"cities": {
-			"Rome": {
-				"picture": {
-					"image1": "https://images.pexels.com/photos/2225442/pexels-photo-2225442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image2": "https://images.pexels.com/photos/753639/pexels-photo-753639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image3": "https://a.cdn-hotels.com/gdcs/production122/d319/f4b58730-9bea-11e8-a1b5-0242ac110053.jpg",
-					"image4": "https://images.pexels.com/photos/532263/pexels-photo-532263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-				},
-				"visit": {
-					"place1": "Colosseum",
-					"place2": "Roman Forum",
-					"place3": "Trevi Fountain"
-				},
-				"restaurant": {
-					"restaurant1": "Ristorante Dillà - Via Mario de' Fiori, 41, 00187 Roma",
-					"restaurant2": "Roscioli Salumeria con Cucina - Via dei Giubbonari, 21, 00186 Roma",
-					"restaurant3": "Tonnarello - Via della Paglia, 1/2/3, 00153 Roma"
-				},
-				"weather": "March to May"
-			}
-		}
-	},
-	{
-		"name": {
-			"common": "Australia"
-		},
-		"cities": {
-			"Canberra": {
-				"picture": {
-					"image1": "https://www.australia-australie.com/wp-content/uploads/2017/01/canberra_06.jpg",
-					"image2": "https://cms.canberra.com.au/app/uploads/2022/03/Adam-McGrath-aerial-featured.jpg",
-					"image3": "https://www.momondo.fr/rimg/dimg/56/9d/9b34ca4c-city-1417-1643db6d9ad.jpg?width=1366&height=768&xhint=1491&yhint=1160&crop=true",
-					"image4": "https://cdn.shopify.com/s/files/1/1223/0772/products/pool-of-reflection-australian-war-memorial-canberra_614afca6-ebbd-4568-b204-97c79d49b255_1200x.jpg?v=1566908262"
-				},
-				"visit": {
-					"place1": "The Parliament House",
-					"place2": "Beijing Garden",
-					"place3": "The Australian War Memorial"
-				},
-				"restaurant": {
-					"restaurant1": "Rebel Rebel - 23 Marcus Clarke St, Acton",
-					"restaurant2": "Lilotang - 1 Burbury Cl, Barton",
-					"restaurant3": "The Boat House - Grevillea Park, Menindee Dr, Barton"
-				},
-				"weather": "September to November"
-			}
-		}
-	},
-	{
-		"name": {
-			"common": "Egypt"
-		},
-		"cities": {
-			"Cairo": {
-				"picture": {
-					"image1": "https://images.pexels.com/photos/3243027/pexels-photo-3243027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image2": "https://images.pexels.com/photos/3873681/pexels-photo-3873681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image3": "https://images.pexels.com/photos/5609738/pexels-photo-5609738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image4": "https://images.pexels.com/photos/13420332/pexels-photo-13420332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-				},
-				"visit": {
-					"place1": "The Great Pyramids of Giza",
-					"place2": "Al-Azhar Mosque",
-					"place3": "Egyptian Museum of Antiquities"
-				},
-				"restaurant": {
-					"restaurant1": "Fayruz Lebanese Restaurant - InterContinental Cairo Citystars Omar Ibn El Khattab St., Cairo 11511",
-					"restaurant2": "Nişantaşi - City Stars Mall Phase 1, Level 5, Cairo 11511",
-					"restaurant3": "Al Khal Egyptian Restaurant - InterContinental Cairo Citystars Omar Bin Khattab Street, Cairo 11511"
-				},
-				"weather": "March to April"
-			}
-		}
-	},
-	{
-		"name": {
-			"common": "Morocco"
-		},
-		"cities": {
-			"Rabat": {
-				"picture": {
-					"image1": "https://images.pexels.com/photos/2945595/pexels-photo-2945595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image2": "https://images.pexels.com/photos/13004157/pexels-photo-13004157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image3": "https://images.pexels.com/photos/9208234/pexels-photo-9208234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-					"image4": "https://images.pexels.com/photos/10203423/pexels-photo-10203423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-				},
-				"visit": {
-					"place1": "Oudaias Kasbah",
-					"place2": "Hassan Tower",
-					"place3": "Mausoleum of Mohamed V"
-				},
-				"restaurant": {
-					"restaurant1": "Restaurant Golden Fish - Avenue Imam Malek Impasse, BP 450 Souissi Sofitel Rabat Jardin Des Roses, Rabat 10000",
-					"restaurant2": "Cosmopolitan Restaurant - Avenue Ibn Tourmet Angle rue Abbou Abbas El Guerraoui, Rabat 10000",
-					"restaurant3": "Ty Potes - 11 Rue Ghafsa, Rabat 10000"
-				},
-				"weather": "June to August"
-			}
-		}
-	},
-	{
-		"name": {
-			"common": "Chile"
-		},
-		"cities": {
-			"Santiago": {
-				"picture": {
-					"image1": "https://images.pexels.com/photos/3874262/pexels-photo-3874262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-					"image2": "https://images.pexels.com/photos/2017747/pexels-photo-2017747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-					"image3": "https://images.pexels.com/photos/14530671/pexels-photo-14530671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-					"image4": "https://images.pexels.com/photos/1684166/pexels-photo-1684166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-				},
-				"visit": {
-					"place1": "Spend a morning at one of Santiago's beautiful parks",
-					"place2": "Climb Santa Lucia Hill",
-					"place3": "Take in Santiago's Plaza de Armas and adjacent Metropolitan Cathedral"
-				},
-				"restaurant": {
-					"restaurant1": "Boragó - Av. San José María Escrivá de Balaguer 5970, Vitacura, Santiago, 7640804",
-					"restaurant2": "99 Restaurante - Andrés de Fuenzalida 99, Providencia, Santiago, 7500000",
-					"restaurant3": "Bar La Providencia - Isabel la Católica 4208 , Las Condes, Santiago,"
-				},
-				"weather": "September to February"
-			}
-		}
-	},
-	{
-		"name": {
-			"common": "Canada"
-		},
-		"cities": {
-			"Ottawa": {
-				"picture": {
-					"image1": "https://images.pexels.com/photos/7328/building-architecture-historical-tower.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-					"image2": "https://images.pexels.com/photos/3656756/pexels-photo-3656756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-					"image3": "https://images.pexels.com/photos/11412885/pexels-photo-11412885.jpeg",
-					"image4": "https://images.pexels.com/photos/208749/pexels-photo-208749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-				},
-				"visit": {
-					"place1": "Parliament Hill and Parliament Buildings",
-					"place2": "Rideau Canal National Historic Site",
-					"place3": "Notre-Dame Cathedral Basilica"
-				},
-				"restaurant": {
-					"restaurant1": "Perch - 300 Preston St 1, Ottawa, ON K1R 7R6",
-					"restaurant2": "Restaurant e18hteen - 18 York St, Ottawa, ON K1N 5T5",
-					"restaurant3": "Stolen Goods Cocktail Bar - 106 Sparks St., Ottawa, ON K1P 5C7"
-				},
-				"weather": "March to May, September to November"
-			}
-		}
-	}
+  {
+    "country": "France",
+    "cities": [
+      {
+        "name": "Paris",
+        "picture": {
+          "image1": "https://res.klook.com/image/upload/Mobile/City/swox6wjsl5ndvkv5jvum.jpg",
+          "image2": "https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://media.timeout.com/images/105983530/image.jpg",
+          "image4": "https://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+        },
+        "visit": {
+          "place1": "Eiffel Tower",
+          "place2": "Louvre Museum",
+          "place3": "Versailles Palace"
+        },
+        "restaurant": {
+          "restaurant1": "La Poule Au Pot - 9 rue Vauvilliers, 75001 Paris",
+          "restaurant2": "Le Cadoret - 1 Rue Pradier, 75019 Paris",
+          "restaurant3": "Le Saint Sebastien - 42 rue Saint Sebastien, 75011 Paris"
+        },
+        "weather": "June to August"
+      }
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "cities": [
+      {
+        "name": "London",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image2": "https://images.pexels.com/photos/230794/pexels-photo-230794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://images.pexels.com/photos/813362/pexels-photo-813362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image4": "https://images.pexels.com/photos/2214035/pexels-photo-2214035.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        },
+        "visit": {
+          "place1": "Buckingham Palace",
+          "place2": "The London Eye",
+          "place3": "Westminster Abbey"
+        },
+        "restaurant": {
+          "restaurant1": "Café Cecilia - 32 Andrews Rd, London E8 4RL",
+          "restaurant2": "Quo Vadis - 26-29 Dean Street, London W1D 3LL",
+          "restaurant3": "St John Marylebone - 98 Marylebone Ln, London W1U 2QA"
+        },
+        "weather": "September to November"
+      }
+    ]
+  },
+  {
+    "country": "Italy",
+    "cities": [
+      {
+        "name": "Rome",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/2225442/pexels-photo-2225442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image2": "https://images.pexels.com/photos/753639/pexels-photo-753639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://a.cdn-hotels.com/gdcs/production122/d319/f4b58730-9bea-11e8-a1b5-0242ac110053.jpg",
+          "image4": "https://images.pexels.com/photos/532263/pexels-photo-532263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        "visit": {
+          "place1": "Colosseum",
+          "place2": "Roman Forum",
+          "place3": "Trevi Fountain"
+        },
+        "restaurant": {
+          "restaurant1": "Ristorante Dillà - Via Mario de' Fiori, 41, 00187 Roma",
+          "restaurant2": "Roscioli Salumeria con Cucina - Via dei Giubbonari, 21, 00186 Roma",
+          "restaurant3": "Tonnarello - Via della Paglia, 1/2/3, 00153 Roma"
+        },
+        "weather": "March to May"
+      }
+    ]
+  },
+  {
+    "country": "Australia",
+    "cities": [
+      {
+        "name": "Canberra",
+        "picture": {
+          "image1": "https://www.australia-australie.com/wp-content/uploads/2017/01/canberra_06.jpg",
+          "image2": "https://cms.canberra.com.au/app/uploads/2022/03/Adam-McGrath-aerial-featured.jpg",
+          "image3": "https://www.momondo.fr/rimg/dimg/56/9d/9b34ca4c-city-1417-1643db6d9ad.jpg?width=1366&height=768&xhint=1491&yhint=1160&crop=true",
+          "image4": "https://cdn.shopify.com/s/files/1/1223/0772/products/pool-of-reflection-australian-war-memorial-canberra_614afca6-ebbd-4568-b204-97c79d49b255_1200x.jpg?v=1566908262"
+        },
+        "visit": {
+          "place1": "The Parliament House",
+          "place2": "Beijing Garden",
+          "place3": "The Australian War Memorial"
+        },
+        "restaurant": {
+          "restaurant1": "Rebel Rebel - 23 Marcus Clarke St, Acton",
+          "restaurant2": "Lilotang - 1 Burbury Cl, Barton",
+          "restaurant3": "The Boat House - Grevillea Park, Menindee Dr, Barton"
+        },
+        "weather": "September to November"
+      }
+    ]
+  },
+  {
+    "country": "Egypt",
+    "cities": [
+      {
+        "name": "Cairo",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/3243027/pexels-photo-3243027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image2": "https://images.pexels.com/photos/3873681/pexels-photo-3873681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://images.pexels.com/photos/5609738/pexels-photo-5609738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image4": "https://images.pexels.com/photos/13420332/pexels-photo-13420332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        "visit": {
+          "place1": "The Great Pyramids of Giza",
+          "place2": "Al-Azhar Mosque",
+          "place3": "Egyptian Museum of Antiquities"
+        },
+        "restaurant": {
+          "restaurant1": "Fayruz Lebanese Restaurant - InterContinental Cairo Citystars Omar Ibn El Khattab St., Cairo 11511",
+          "restaurant2": "Nişantaşi - City Stars Mall Phase 1, Level 5, Cairo 11511",
+          "restaurant3": "Al Khal Egyptian Restaurant - InterContinental Cairo Citystars Omar Bin Khattab Street, Cairo 11511"
+        },
+        "weather": "March to April"
+      }
+    ]
+  },
+  {
+    "country": "Morocco",
+    "cities": [
+      {
+        "name": "Rabat",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/2945595/pexels-photo-2945595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image2": "https://images.pexels.com/photos/13004157/pexels-photo-13004157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://images.pexels.com/photos/9208234/pexels-photo-9208234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image4": "https://images.pexels.com/photos/10203423/pexels-photo-10203423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        "visit": {
+          "place1": "Oudaias Kasbah",
+          "place2": "Hassan Tower",
+          "place3": "Mausoleum of Mohamed V"
+        },
+        "restaurant": {
+          "restaurant1": "Restaurant Golden Fish - Avenue Imam Malek Impasse, BP 450 Souissi Sofitel Rabat Jardin Des Roses, Rabat 10000",
+          "restaurant2": "Cosmopolitan Restaurant - Avenue Ibn Tourmet Angle rue Abbou Abbas El Guerraoui, Rabat 10000",
+          "restaurant3": "Ty Potes - 11 Rue Ghafsa, Rabat 10000"
+        },
+        "weather": "June to August"
+      }
+    ]
+  },
+  {
+    "country": "Chile",
+    "cities": [
+      {
+        "name": "Santiago",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/3874262/pexels-photo-3874262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "image2": "https://images.pexels.com/photos/2017747/pexels-photo-2017747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "image3": "https://images.pexels.com/photos/14530671/pexels-photo-14530671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "image4": "https://images.pexels.com/photos/1684166/pexels-photo-1684166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        "visit": {
+          "place1": "Spend a morning at one of Santiago's beautiful parks",
+          "place2": "Climb Santa Lucia Hill",
+          "place3": "Take in Santiago's Plaza de Armas and adjacent Metropolitan Cathedral"
+        },
+        "restaurant": {
+          "restaurant1": "Boragó - Av. San José María Escrivá de Balaguer 5970, Vitacura, Santiago, 7640804",
+          "restaurant2": "99 Restaurante - Andrés de Fuenzalida 99, Providencia, Santiago, 7500000",
+          "restaurant3": "Bar La Providencia - Isabel la Católica 4208 , Las Condes, Santiago,"
+        },
+        "weather": "September to February"
+      }
+    ]
+  },
+  {
+    "country": "Canada",
+    "cities": [
+      {
+        "name": "Ottawa",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/7328/building-architecture-historical-tower.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "image2": "https://images.pexels.com/photos/3656756/pexels-photo-3656756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "image3": "https://images.pexels.com/photos/11412885/pexels-photo-11412885.jpeg",
+          "image4": "https://images.pexels.com/photos/208749/pexels-photo-208749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        "visit": {
+          "place1": "Parliament Hill and Parliament Buildings",
+          "place2": "Rideau Canal National Historic Site",
+          "place3": "Notre-Dame Cathedral Basilica"
+        },
+        "restaurant": {
+          "restaurant1": "Perch - 300 Preston St 1, Ottawa, ON K1R 7R6",
+          "restaurant2": "Restaurant e18hteen - 18 York St, Ottawa, ON K1N 5T5",
+          "restaurant3": "Stolen Goods Cocktail Bar - 106 Sparks St., Ottawa, ON K1P 5C7"
+        },
+        "weather": "March to May, September to November"
+      }
+    ]
+  }
 ]
