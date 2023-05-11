@@ -1,5 +1,5 @@
 // import { useState, useEffect } from "react";
-import DevCard from "../components/Card";
+import DevCard from "../components/DevCard";
 import devTeam from "../data/devTeam.json";
 
 export default function About() {
