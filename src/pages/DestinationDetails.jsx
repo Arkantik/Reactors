@@ -1,33 +1,52 @@
+import { useParams } from "react-router";
+import { useEffect, useState } from "react";
 export default function DestinationDetails() {
+  const [destination, setDestination] = useState({});
+  const { id } = useParams();
+
+  useEffect(() => {
+    const destinations = JSON.parse(localStorage.getItem("destinations"));
+    const filteredDestination = destinations.filter(
+      (destination) => destination.id == id
+    );
+    setDestination(filteredDestination[0]);
+  }, []);
+
+  useEffect(() => console.log(destination), [destination]);
+
   return (
     <div className="container mx-auto px-4 py-8 md:flex flex-wrap">
-      <h1 className="text-4xl font-bold mb-8">London</h1>
+      <h1 className="text-4xl font-bold mb-8">
+        {destination.cities ? destination.cities[0].name : null}
+      </h1>
 
       <div className="grid grid-cols-2 gap-4 mt-8">
         <img
-          src="https://images.pexels.com/photos/2214035/pexels-photo-2214035.jpeg?auto=compress&cs=tinysrgb&w=1600"
-          alt="London 1"
+          src={destination.cities ? destination.cities[0].picture.image1 : null}
+          alt={destination.cities ? destination.cities[0].name + " 1" : null}
           className="w-full h-64 object-cover rounded-lg"
         />
         <img
-          src="https://images.pexels.com/photos/813362/pexels-photo-813362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="London 2"
+          src={destination.cities ? destination.cities[0].picture.image2 : null}
+          alt={destination.cities ? destination.cities[0].name + " 2" : null}
           className="w-full h-64 object-cover  rounded-lg"
         />
         <img
-          src="https://images.pexels.com/photos/230794/pexels-photo-230794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="London 3"
+          src={destination.cities ? destination.cities[0].picture.image3 : null}
+          alt={destination.cities ? destination.cities[0].name + " 3" : null}
           className="w-full h-64 object-cover  rounded-lg"
         />
         <img
-          src="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="London 4"
+          src={destination.cities ? destination.cities[0].picture.image4 : null}
+          alt={destination.cities ? destination.cities[0].name + " 4" : null}
           className="w-full h-64 object-cover  rounded-lg"
         />
       </div>
       <div className="flex justify-between mt-8">
         <div className="w-1/3">
-          <h2 className="text-xl font-bold mb-2">United Kingdom</h2>
+          <h2 className="text-xl font-bold mb-2">
+            {destination.name ? destination.name.common : null}
+          </h2>
           <p className="text-gray-700">
             The United Kingdom is a country located off the northwest coast of
             mainland Europe. It is made up of England, Scotland, Wales and
@@ -39,11 +58,20 @@ export default function DestinationDetails() {
           </p>
         </div>
         <div className="w-2/3 flex flex-col items-end">
-          <h2 className="text-xl font-bold mb-2">Things to do in London</h2>
+          <h2 className="text-xl font-bold mb-2">
+            Things to do in{" "}
+            {destination.cities ? destination.cities[0].name : null}
+          </h2>
           <ul className="list-disc pl-4">
-            <li>Buckingham Palace</li>
-            <li>The London Eye</li>
-            <li>Westminster Abbey</li>
+            <li>
+              {destination.cities ? destination.cities[0].visit.place1 : null}
+            </li>
+            <li>
+              {destination.cities ? destination.cities[0].visit.place2 : null}
+            </li>
+            <li>
+              {destination.cities ? destination.cities[0].visit.place3 : null}
+            </li>
           </ul>
         </div>
       </div>
@@ -51,9 +79,21 @@ export default function DestinationDetails() {
       <div className="mt-8">
         <h2 className="text-xl font-bold mb-2">Restaurants</h2>
         <ul className="list-disc pl-4">
-          <li>Café Cecilia - 32 Andrews Rd, London E8 4RL</li>
-          <li>Quo Vadis - 26-29 Dean Street, London W1D 3LL</li>
-          <li>St John Marylebone - 98 Marylebone Ln, London W1U 2QA</li>
+          <li>
+            {destination.cities
+              ? destination.cities[0].restaurant.restaurant1
+              : null}
+          </li>
+          <li>
+            {destination.cities
+              ? destination.cities[0].restaurant.restaurant2
+              : null}
+          </li>
+          <li>
+            {destination.cities
+              ? destination.cities[0].restaurant.restaurant3
+              : null}
+          </li>
         </ul>
       </div>
     </div>

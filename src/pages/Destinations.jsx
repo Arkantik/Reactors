@@ -1,6 +1,8 @@
 import Card from "../components/Card";
 import FilterBtn from "../components/FilterBtn";
 import SearchBar from "../components/SearchBar";
+
+import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import filterData from "../helpers/filterData";
@@ -40,7 +42,7 @@ export default function Destinations() {
         })
         .catch((err) => {
           console.error(`Error when retrieving data from API: ${err.message}`);
-        })
+        });
 
       return function cleanUp() {
         controller.abort();
@@ -67,7 +69,9 @@ export default function Destinations() {
         {destinations.map((destination, index) => {
           return (
             <li key={index}>
-              <Card destination={destination} />
+              <NavLink to={`/destinations/${destination.id}`}>
+                <Card destination={destination} />
+              </NavLink>
             </li>
           );
         })}
