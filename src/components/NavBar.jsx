@@ -22,7 +22,7 @@ export default function Navbar() {
          <img src="/public/assets/images/logo.png" alt="logo HoliFun" width="50"
           height="30"
           className="logo-desktop" /> 
-      </a>
+      </NavLink>
       <form onSubmit={onSearch}>
         <label className="searchbar">
           <input
