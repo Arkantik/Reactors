@@ -2,6 +2,7 @@ import Card from "../components/Card";
 import FilterBtn from "../components/FilterBtn";
 import SearchBar from "../components/SearchBar";
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Destinations() {
   const destinations = JSON.parse(localStorage.getItem("destinations"));
@@ -17,7 +18,9 @@ export default function Destinations() {
         {destinations.map((destination, index) => {
           return (
             <li key={index}>
-              <Card destination={destination} />
+              <NavLink to={`/destinations/${destination.id}`}>
+                <Card destination={destination} />
+              </NavLink>
             </li>
           );
         })}
