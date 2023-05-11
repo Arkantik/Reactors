@@ -1,6 +1,5 @@
 export default function DevCard({ firstname, lastname, img }) {
   return (
-
     <>
       <img
         src={img}
