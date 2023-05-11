@@ -12,21 +12,21 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 export default function App() {
-	return (
-		<div className="wrapper grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto]">
-			<header className="py-2 bg-neutral-900 text-neutral-50">
-				<NavBar />
-			</header>
-			<main className="main__container py-4 px-8">
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/contact" element={<Contact />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/page" element={<Page />} />
-					<Route path="*" element={<NotFound />} />
-				</Routes>
-			</main>
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="wrapper grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto]">
+      <header className="py-2 bg-neutral-900 text-neutral-50">
+        <NavBar />
+      </header>
+      <main className="main__container py-4 px-8">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/page" element={<Page />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  );
 }
