@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Page from "./pages/Page";
 import DestinationsCards from "./pages/DestinationsCards";
 
 import NavBar from "./components/NavBar";
@@ -21,7 +20,7 @@ export default function App() {
 			<main className="main__container py-4 px-8">
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/" element={<Home />} />
+					<Route path="/destinations" element={<DestinationsCards />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/about" element={<About />} />
 					<Route path="*" element={<NotFound />} />
