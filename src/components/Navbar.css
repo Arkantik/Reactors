@@ -1,13 +1,13 @@
-.navbar {
-    display: flex;
-    justify-content: right;
-}
-
-li {
-    margin-right: 70px;
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .logo-desktop {
-    display: block;
+	display: block;
 }
 
+.is-active {
+	color: #59cdff;
+}
