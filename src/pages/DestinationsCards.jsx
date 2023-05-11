@@ -1,9 +1,11 @@
 import Card from "../components/Card";
+import FilterBtn from "../components/FilterBtn";
 
 export default function DestinationsCards() {
-  return (
-    <>
-      <Card />
-    </>
-  );
+	return (
+		<section>
+			<FilterBtn />
+			<Card />
+		</section>
+	);
 }
