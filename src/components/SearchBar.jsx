@@ -1,29 +1,12 @@
+import "./SearchBar.css"
 export default function SearchBar() {
-    const [recherche, setRecherche] = useState("");
-
-  function onChange(e) {
-    setRecherche(e.target.value);
-  }
-  const navigate = useNavigate();
-
-  function onSearch(e) {
-    e.preventDefault(); /** Evite le rechargement de la page */
-    navigate(`/search/${recherche}`);
-  }
-
   return (
-     <div>
-        <form onSubmit={onSearch}>
+    <div>
+      <form>
         <label className="searchbar">
-          <input
-            type="text"
-            placeholder=""
-            name="search"
-            onChange={onChange}
-            value={recherche}
-          />
+          <input type="text" placeholder="recherche" name="search" />
         </label>
       </form>
-     </div>
-  )
+    </div>
+  );
 }
