@@ -43,6 +43,12 @@ export default function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    if (destinations.length > 0) {
+      localStorage.setItem("destinations", JSON.stringify(destinations));
+    }
+  }, [destinations]);
+
   return (
     <section>
       <h1>Welcome Home</h1>
