@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Page from "./pages/Page";
 import DestinationsCards from "./pages/DestinationsCards";
 
 import NavBar from "./components/NavBar";
