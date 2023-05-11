@@ -21,7 +21,7 @@ export default function App() {
 			<main className="main__container py-4 px-8">
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/" element={<Home />} />
+					<Route path="/destinations" element={<DestinationsCards />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/about" element={<About />} />
 					<Route path="*" element={<NotFound />} />
