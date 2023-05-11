@@ -1,20 +1,19 @@
 export default function Card() {
   return (
-    <div className=" flex flex-wrap justify-center gap-x-16 gap-y-16">
-      <div className=" mobile:w-60 tablet:w-72 desktop:w-80">
-        <div className="card rounded-md  mobile:h-80 tablet:h-96 desktop:h-96 ">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Clock_Tower_-_Palace_of_Westminster%2C_London_-_May_2007.jpg/640px-Clock_Tower_-_Palace_of_Westminster%2C_London_-_May_2007.jpg"
-            alt="pokemon"
-            className="object-cover object-center w-full h-full"
-          />
-        </div>
-        <div className="flex justify-between	">
-          <div className=" title-date ml-4 ">
-            <h1 className="font-bold text-black text-xl ">London</h1>
-            <h2 className="text-black">date</h2>
-          </div>
-        </div>
+    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <img
+        className="rounded-t-lg"
+        src="https://media.istockphoto.com/id/1295031273/fr/photo/big-ben-clock-tower-%C3%A0-londres-royaume-uni-par-une-belle-journ%C3%A9e-composition-panoramique-avec.jpg?s=612x612&w=0&k=20&c=oq7cOYglVjV7tipSWFdS-xLQ9J3b_iQy_WjMhs06b2o="
+        alt="big ben"
+      />
+      <div className="p-5">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          London
+        </h5>
+
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          United Kingdom
+        </p>
       </div>
     </div>
   );
