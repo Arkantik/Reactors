@@ -1,41 +1,13 @@
-.navbar {
-    display: flex;
-    justify-content: right;
-}
-
-li {
-    margin-right: 70px;
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .logo-desktop {
-    display: block;
+	display: block;
 }
 
-label {
-    display: initial;
-    position: relative;
+.is-active {
+	color: #59cdff;
 }
-
-label.searchbar:before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background: url("/assets/logo/Search.svg") center / contain no-repeat;
-}
-header label {
-    display: initial;
-    position: relative;
-  }
-
-input {
-    height: 40px;
-    width: 300px;
-    padding: 10px 30px;
-    background-color: blue;
-    border: 1px solid rgb(111, 110, 110);
-    display: block;
-  }
-
