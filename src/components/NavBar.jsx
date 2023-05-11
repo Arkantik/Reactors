@@ -1,17 +1,16 @@
 import { NavLink } from "react-router-dom";
-import "./Navbar.css";
 
 export default function Navbar() {
   return (
     <header>
-      <nav className="px-4">
+      <nav className="px-4 flex justify-between items-center">
         <NavLink to="/">
           <img
             src="/assets/images/logo-2.png"
             alt="logo HoliFun"
             width="48"
             height="48"
-            className="logo-desktop"
+            className="block"
           />
         </NavLink>
         <ul className="hidden md:flex gap-16 pr-4 font-bold no-underline">

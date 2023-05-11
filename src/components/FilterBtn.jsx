@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-// assets
 import filterBtn from "/assets/icons/filter.svg";
 
 export default function FilterBtn({ cards, setFilteredCards }) {

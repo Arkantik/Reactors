@@ -1,13 +1,12 @@
-// import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
-import "./SearchBar.css";
-
 export default function SearchBar() {
   return (
     <form>
-      <label className="searchbar">
-        <input type="text" placeholder="Destinations" name="search" />
-      </label>
+      <input
+        type="text"
+        placeholder="Enter your destination..."
+        name="search"
+        className="px-4 min-w-[300px] bg-neutral-200 rounded-md py-2 border-neutral-400 border"
+      />
     </form>
   );
 }

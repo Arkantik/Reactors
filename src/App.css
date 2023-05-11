@@ -17,35 +17,38 @@
 
 /* Custom CSS rules for base HTML elements */
 @layer base {
-	h1 {
-		@apply text-3xl;
-	}
+  h1 {
+    @apply text-3xl;
+  }
 
-	h2 {
-		@apply text-xl;
-	}
+  h2 {
+    @apply text-xl;
+  }
 
-	button {
-		cursor: pointer;
-	}
+  button {
+    cursor: pointer;
+  }
 }
 
 /* Custom CSS rules for components (.card, .btn, ...) */
 @layer components {
-	.main__container {
-		@apply py-4;
-	}
-	.navlink {
-		border-bottom: 2px solid transparent;
-		padding: 4px 8px;
-	}
-	.navlink:hover {
-		border-bottom: 1px solid;
-	}
+  .main__container {
+    @apply py-4;
+  }
+  .navlink {
+    border-bottom: 2px solid transparent;
+    padding: 4px 8px;
+  }
+  .navlink:hover {
+    border-bottom: 1px solid;
+  }
 }
 
 /* Custom CSS rules for utilities (.layout, .shadow, ...) */
 @layer utilities {
+  .is-active {
+    color: #84e7eb;
+  }
 }
 
 /* ______________________________________________________________________ *\
@@ -55,36 +58,36 @@
 /* Code for DevCard */
 
 .card {
-	border: #ffd966ff solid 6px;
+  border: #ffd966ff solid 6px;
 }
 
 /* Code for Filter */
 
 .bg-dark {
-	background-color: #ffd966ff;
+  background-color: #ffd966ff;
 }
 
 .header {
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
-	padding: 12px 12px * 3;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 12px * 3;
 }
 
 .content {
-	background: rgba(0, 0, 0, 0.05);
-	padding: 12px;
-	align-items: flex-start;
-	display: flex;
-	flex-direction: column;
-	margin: 12px * 2 0;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 12px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: 12px * 2 0;
 }
 
 .fixed {
-	bottom: 0;
-	left: 0;
-	pointer-events: none;
-	position: fixed;
-	right: 0;
-	top: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
 }

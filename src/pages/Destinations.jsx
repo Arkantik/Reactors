@@ -1,10 +1,11 @@
+import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 import Card from "../components/Card";
 import FilterBtn from "../components/FilterBtn";
 import SearchBar from "../components/SearchBar";
 
-import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
-import axios from "axios";
 import filterData from "../helpers/filterData";
 import infoDestinations from "../data/data";
 import appendData from "../helpers/appendData";
