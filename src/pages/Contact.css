@@ -5,7 +5,7 @@
 	flex-direction: column;
 	min-height: calc(100vh - 250px);
 	margin: auto;
-	background-image: url("/assets/images/background-about.png");
+	background-image: url("../assets/images/background-about.png");
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 20px;
 	color: black;
