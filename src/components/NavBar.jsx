@@ -34,7 +34,7 @@ export default function Navbar() {
 					}`}>
 					<li className="no-underline">
 						<NavLink
-							to="/holifun"
+							to="/holifun/"
 							onClick={closeMenu}
 							className={({ isActive }) =>
 								`navlink ${isActive && !isMenuOpen ? "is-active" : ""}`
