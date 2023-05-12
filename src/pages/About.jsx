@@ -6,14 +6,14 @@ export default function About() {
   const developers = devTeam;
 
   return (
-    <section className="h-full bg-cover bg-no-repeat bg-[url('/assets/images/background-about.png')] px-4">
-      <div className="h-full overflow-y-auto grid grid-cols-1 grid-rows-[auto_1fr]">
+    <section className="h-full bg-[url('/assets/images/background-about.png')] bg-cover bg-no-repeat px-4">
+      <div className="grid h-full grid-cols-1 grid-rows-[auto_1fr] overflow-y-auto">
         <h1 className="text-center">The Reactors Team 🚀 </h1>
-        <ul className="flex flex-wrap gap-[3vw] justify-center mb- self-center">
+        <ul className="mb- flex flex-wrap justify-center gap-[3vw] self-center">
           {developers.map((developer) => (
             <li
               key={developer.id}
-              className="w-[200px] md:w-[250px] flex flex-col gap-4 items-center max-w-[250px] rounded-lg drop-shadow-xl bg-neutral-50/30 backdrop-blur-md pb-4 overflow-hidden h-fit"
+              className="flex h-fit w-[200px] max-w-[250px] flex-col items-center gap-4 overflow-hidden rounded-lg bg-neutral-50/30 pb-4 drop-shadow-xl backdrop-blur-md hover:animate-bounce md:w-[250px]"
             >
               <DevCard {...developer} />
             </li>
