@@ -78,7 +78,7 @@ export default function Contact() {
           </div>
           <div className="">
             <input
-              className=""
+              className="margin-1em"
               type="email"
               placeholder="email@example.com"
               id="email"
@@ -92,7 +92,7 @@ export default function Contact() {
               name="message"
             />
           </div>
-          <input className="" type="submit" value="Send" onClick={notify} />
+          <input className="submit" type="submit" value="Send" onClick={notify} />
         </form>
         <ToastContainer />
       </div>

@@ -1,23 +1,49 @@
+
+
 .form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    min-height: calc(100vh - 250px);
+    margin:  auto;
+    background-image: url('/assets/images/background-about.png');
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: black;
+
 }
 
 textarea {
+    margin: 1em 0;
+    height: 300px;
+    width: 600px;
+    padding: 10px 30px;
     border: 1px solid rgb(111, 110, 110);
-    margin-top: 1rem;
-    height: 150px;
-    width: 300px;
+    border-radius: 5px;
+    background: transparent;
+    backdrop-filter:blur(30px) ;
 
 }
 
+form input {
+    margin-bottom: 1rem;
+    background: transparent;
+    
+}
+
 input {
-    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 600px;
+    margin-bottom: 10px;
+    
 }
 
 h1 {
     margin-bottom: 3rem;
+}
+
+.submit {
+    backdrop-filter:blur(10px) ;
 }
