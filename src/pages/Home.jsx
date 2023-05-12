@@ -79,7 +79,7 @@ export default function Home() {
 	const handleCloseModal = () => setIsModalOpen(false);
 	const handleConfirmModal = () => {
 		// redirect to the appropriate page
-		navigate(`/destinations/${currentDestination.id}`);
+		navigate(`/holifun/destinations/${currentDestination.id}`);
 		// close the modal
 		handleCloseModal();
 	};
