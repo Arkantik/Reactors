@@ -90,7 +90,7 @@ export default function Home() {
 	 * RENDER
 	 */
 	return (
-		<section className="grid h-full grid-cols-1 grid-rows-[auto_1fr_auto] md:grid-cols-2 md:grid-rows-[auto_1fr]">
+		<section className="h-full bg-[url('../assets/images/background-2.png')] bg-cover bg-no-repeat px-4">
 			<h1 className="text-center md:col-span-2">
 				Find your next holidays destination!
 			</h1>
@@ -99,22 +99,22 @@ export default function Home() {
 
 			{!loading && destinations ? (
 				<div className="grid h-full grid-cols-1 grid-rows-[2fr_1fr] md:col-span-2 md:flex md:grid-rows-[auto] md:flex-wrap">
-					<div className="flex items-center justify-center md:h-3/5 md:basis-2/3 md:self-center xl:h-4/5 2xl:h-full">
-						<ReactGlobe
-							globeBackgroundTexture={null}
-							ambientLightIntensity="1"
-							cameraAutoRotateSpeed="0.01"
-							height="90%"
-							width="100%"
-							markers={customMarkers}
-							onClickMarker={(marker) => {
-								handleClickMarker(marker);
-								handleOpenModal();
-								dispatch({ type: "FOCUS", payload: marker });
-							}}
-							options={options}
-						/>
-					</div>
+					{/* <div className="flex items-center justify-center md:h-3/5 md:basis-2/3 md:self-center xl:h-4/5 2xl:h-full"> */}
+					<ReactGlobe
+						globeBackgroundTexture={null}
+						cameraAutoRotateSpeed="0.01"
+						height="90%"
+						width="100vw"
+						markers={customMarkers}
+						onClickMarker={(marker) => {
+							handleClickMarker(marker);
+							handleOpenModal();
+							dispatch({ type: "FOCUS", payload: marker });
+						}}
+						options={options}
+						className="globe"
+					/>
+					{/* </div> */}
 
 					{currentDestination.name ? (
 						<div className="relative flex grow items-center justify-center md:basis-1/3">
