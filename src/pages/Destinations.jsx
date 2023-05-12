@@ -100,7 +100,7 @@ export default function Destinations() {
 				{currentDestinations.map((destination, index) => {
 					return (
 						<li key={index}>
-							<NavLink to={`/destinations/${destination.id}`}>
+							<NavLink to={`/holifun/destinations/${destination.id}`}>
 								<Card destination={destination} />
 							</NavLink>
 						</li>
