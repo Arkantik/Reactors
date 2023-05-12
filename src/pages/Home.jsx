@@ -3,6 +3,8 @@ import ReactGlobe from "react-globe";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+import Background from "../../public/assets/images/background-2.png";
+
 import infoDestinations from "../data/data";
 import filterData from "../helpers/filterData";
 import appendData from "../helpers/appendData";
@@ -10,8 +12,6 @@ import createMarkers from "../helpers/createMarkers";
 
 import Modal from "../components/Modal";
 import markerRenderer from "../components/Globe-ts/markerRenderer";
-
-import Background from "../../public/assets/images/background-2.png";
 
 export default function Home() {
 	/**
