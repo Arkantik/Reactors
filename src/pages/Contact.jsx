@@ -65,10 +65,10 @@ export default function Contact() {
 	return (
 		<section className="flex h-full flex-col items-center justify-center bg-[url('../assets/images/background-1.png')] bg-cover bg-no-repeat px-4">
 			<h1>Contact us</h1>
-			<form className="" ref={form} onSubmit={sendEmail}>
-				<div className="">
+			<form ref={form} onSubmit={sendEmail}>
+				<div>
 					<input
-						className=""
+						className="w-full items-start rounded px-5 py-1.5 outline-none"
 						type="text"
 						placeholder="username"
 						id="text"
@@ -77,16 +77,16 @@ export default function Contact() {
 				</div>
 				<div className="">
 					<input
-						className="margin-1em"
+						className="w-full items-start rounded px-5 py-1.5 outline-none"
 						type="email"
 						placeholder="email@example.com"
 						id="email"
 						name="user_email"
 					/>
 				</div>
-				<div className="">
+				<div>
 					<textarea
-						className=""
+						className="textarea w-full items-start rounded px-5 py-1.5 outline-none"
 						placeholder="Type your text here"
 						name="message"
 					/>

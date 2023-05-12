@@ -77,7 +77,7 @@ export default function Destinations() {
 				<SearchBar handleSearch={handleSearch} />
 				<FilterBtn />
 			</div>
-			<ul className="flex flex-wrap justify-center gap-[3vw] overflow-y-auto">
+			<ul className="flex flex-wrap justify-center gap-[2vw] overflow-y-auto">
 				{destinations.map((destination, index) => {
 					return (
 						<li
