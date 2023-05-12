@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+import Logo from "../../public/assets/images/logo-2.png";
+import mobileMenu from "../../public/assets/icons/menu-hamburger-umbrella.svg";
+
 export default function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,7 +16,7 @@ export default function Navbar() {
 				<div className="z-50 flex items-center gap-4">
 					<NavLink to="/">
 						<img
-							src="/assets/images/logo-2.png"
+							src={Logo}
 							alt="logo HoliFun"
 							width="48"
 							height="48"
@@ -21,7 +24,7 @@ export default function Navbar() {
 							onClick={closeMenu}
 						/>
 					</NavLink>
-					<h1>HoliFun</h1>
+					<h1 className="text-[#84e7eb]">HoliFun</h1>
 				</div>
 				<ul
 					className={`gap-16 font-bold no-underline ${
@@ -71,12 +74,7 @@ export default function Navbar() {
 					</li>
 				</ul>
 				<button type="button" className="z-50 md:hidden" onClick={toggleMenu}>
-					<img
-						src="../assets/icons/menu-hamburger-umbrella.svg"
-						alt="menu hamburger"
-						width="32"
-						height="32"
-					/>
+					<img src={mobileMenu} alt="menu hamburger" width="32" height="32" />
 				</button>
 			</nav>
 		</header>

@@ -2,11 +2,15 @@
 import DevCard from "../components/DevCard";
 import devTeam from "../data/devTeam.json";
 
+import Background from "../../public/assets/images/background-1.png";
+
 export default function About() {
 	const developers = devTeam;
 
 	return (
-		<section className="h-full bg-[url('../assets/images/background-1.png')] bg-cover bg-no-repeat px-4">
+		<section
+			className="h-full bg-cover bg-no-repeat px-4"
+			style={{ backgroundImage: `url(${Background})` }}>
 			<div className="grid h-full grid-cols-1 grid-rows-[auto_1fr] overflow-y-auto">
 				<h1 className="text-center">The Reactors Team 🚀 </h1>
 				<ul className="mb- flex flex-wrap justify-center gap-[3vw] self-center">
