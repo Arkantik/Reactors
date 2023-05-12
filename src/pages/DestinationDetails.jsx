@@ -10,6 +10,7 @@ export default function DestinationDetails() {
     const filteredDestination = destinations.filter(
       (destination) => destination.id == id
     );
+    console.log(filteredDestination)
     setDestination(filteredDestination[0]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -47,14 +48,11 @@ export default function DestinationDetails() {
         <h2 className="font-bold mb-2">
           {destination.name ? destination.name.common : null}
         </h2>
+        <img src={destination.cities ? destination.cities[0].flag : null} alt="flag" className="mb-8"/>
         <p className="text-gray-700">
-          The United Kingdom is a country located off the northwest coast of
-          mainland Europe. It is made up of England, Scotland, Wales and
-          Northern Ireland. London is the capital city of the United Kingdom.
+          {destination.cities ? destination.cities[0].description : null}
         </p>{" "}
         <p className="text-gray-700 mt-4">
-          The recommended time to visit London is between September and
-          November.
         </p>
       </article>
 
