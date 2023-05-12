@@ -3,30 +3,32 @@
 		"id": "1",
 		"firstname": "Hafsa 🏝️",
 		"lastname": "Aït Ouarraou",
-		"img": "../assets/images/missing-picture.png"
+		"img": "../assets/images/missing-picture.png",
+		"linkedIn": "https://www.linkedin.com/in/hafsa-a%C3%AFt-ouarraou-49a5ab269/",
+		"github": "https://github.com/hxfsa"
 	},
 	{
 		"id": "2",
 		"firstname": "Denis ⛱️",
 		"lastname": "Dezest",
-		"img": "../assets/images/profile-denis.jpg"
+		"img": "../assets/images/profile-denis.jpg",
+		"linkedIn": "https://www.linkedin.com/in/denis-dezest-20880387/",
+		"github": "https://github.com/ddZ6ii"
 	},
 	{
 		"id": "3",
 		"firstname": "Jeremy 🍹",
 		"lastname": "Dohin",
-		"img": "../assets/images/profile-jeremy.jpg"
+		"img": "../assets/images/profile-jeremy.jpg",
+		"linkedIn": "https://www.linkedin.com/in/jeremy-dohin/",
+		"github": "https://github.com/Arkantik"
 	},
 	{
 		"id": "4",
 		"firstname": "Badis ⛵️",
 		"lastname": "Beloucif",
-		"img": "../assets/images/missing-picture.png"
-	},
-	{
-		"id": "5",
-		"firstname": "Roxane 🗺️",
-		"lastname": "Belahcene",
-		"img": "../assets/images/missing-picture.png"
+		"img": "../assets/images/missing-picture.png",
+		"linkedIn": "https://www.linkedin.com/in/badis-beloucif-a6b2b2164/",
+		"github": "https://github.com/Badis69"
 	}
 ]
