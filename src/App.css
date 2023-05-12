@@ -43,11 +43,11 @@
   }
 
   .modal__overlay {
-    @apply absolute bottom-0 left-[50vw] flex h-fit w-[90vw] -translate-x-1/2 -translate-y-[6vh] items-center justify-center rounded-md bg-neutral-900/70 px-4 py-8 drop-shadow-xl backdrop-blur-md md:left-[100vw] md:right-0 md:top-[50vh] md:max-w-[33%] md:-translate-x-[105%];
+    @apply absolute bottom-0 left-[50vw] flex h-fit w-[90vw] -translate-x-1/2 -translate-y-[6vh] items-center justify-center rounded-md bg-neutral-900/70 px-4 py-4 drop-shadow-xl backdrop-blur-md md:left-[100vw] md:right-0 md:top-[50vh] md:max-w-[33%] md:-translate-x-[105%];
   }
 
   .modal__content {
-    @apply flex flex-col items-center justify-center gap-4 text-neutral-50 focus:outline-none;
+    @apply flex flex-col items-center justify-center gap-2 text-neutral-50 focus:outline-none;
   }
 }
 
