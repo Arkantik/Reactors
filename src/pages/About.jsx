@@ -6,7 +6,7 @@ export default function About() {
 	const developers = devTeam;
 
 	return (
-		<section className="h-full bg-[url('../assets/images/background-about.png')] bg-cover bg-no-repeat px-4">
+		<section className="h-full bg-[url('../assets/images/background-1.png')] bg-cover bg-no-repeat px-4">
 			<div className="grid h-full grid-cols-1 grid-rows-[auto_1fr] overflow-y-auto">
 				<h1 className="text-center">The Reactors Team 🚀 </h1>
 				<ul className="mb- flex flex-wrap justify-center gap-[3vw] self-center">
