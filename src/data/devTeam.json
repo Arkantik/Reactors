@@ -3,7 +3,7 @@
 		"id": "1",
 		"firstname": "Hafsa 🏝️",
 		"lastname": "Aït Ouarraou",
-		"img": "../assets/images/profile-hafsa.jpg",
+		"img": "./assets/images/profile-hafsa.jpg",
 		"linkedIn": "https://www.linkedin.com/in/hafsa-a%C3%AFt-ouarraou-49a5ab269/",
 		"github": "https://github.com/hxfsa"
 	},
@@ -11,7 +11,7 @@
 		"id": "2",
 		"firstname": "Denis ⛱️",
 		"lastname": "Dezest",
-		"img": "../assets/images/profile-denis.jpg",
+		"img": "./assets/images/profile-denis.jpg",
 		"linkedIn": "https://www.linkedin.com/in/denis-dezest/",
 		"github": "https://github.com/ddZ6ii"
 	},
@@ -27,7 +27,7 @@
 		"id": "4",
 		"firstname": "Badis ⛵️",
 		"lastname": "Beloucif",
-		"img": "../assets/images/profile-badis.jpeg",
+		"img": "./assets/images/profile-badis.jpeg",
 		"linkedIn": "https://www.linkedin.com/in/badis-beloucif-a6b2b2164/",
 		"github": "https://github.com/Badis69"
 	}
