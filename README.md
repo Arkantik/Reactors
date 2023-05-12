@@ -36,7 +36,6 @@
 - Denis Dezest : https://github.com/ddZ6ii
 - Jeremy Dohin : https://github.com/Arkantik
 - Badis Beloucif : https://github.com/Badis69
-- Roxane Belahcene : https://github.com/Roxyroke
 
 </br>
 

@@ -46,8 +46,8 @@ export default function FilterBtn({ filterDestinations }) {
       </button>
       <ul
         className={`${
-          isOpen ? "flex" : "hidden"
-        } shadow-m absolute bottom-0 left-0 z-10 w-fit translate-x-12 rounded-md py-2`}
+          isOpen ? "block md:flex md:items-center" : "hidden"
+        } absolute right-0 top-0 z-10 translate-y-12 rounded-md bg-neutral-500/60 py-2 text-neutral-50 shadow-md backdrop-blur-md md:bottom-0 md:left-0 md:right-full md:w-fit md:translate-x-12 md:translate-y-0 md:text-neutral-900`}
       >
         {regions.map((region, index) => (
           <li key={index} className="px-4 py-2">

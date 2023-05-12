@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import emailjs from "emailjs-com";
-import "./Contact.css"
+import "./Contact.css";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -63,39 +63,42 @@ export default function Contact() {
   };
 
   return (
-    <>
-      <div className="form">
-        <h1>Contact us</h1>
-        <form className="" ref={form} onSubmit={sendEmail}>
-          <div className="">
-            <input
-              className=""
-              type="text"
-              placeholder="username"
-              id="text"
-              name="name"
-            />
-          </div>
-          <div className="">
-            <input
-              className=""
-              type="email"
-              placeholder="email@example.com"
-              id="email"
-              name="user_email"
-            />
-          </div>
-          <div className="">
-            <textarea
-              className=""
-              placeholder="Type your text here"
-              name="message"
-            />
-          </div>
-          <input className="" type="submit" value="Send" onClick={notify} />
-        </form>
-        <ToastContainer />
-      </div>
-    </>
+    <section className="flex h-full flex-col items-center justify-center bg-[url('../assets/images/background-1.png')] bg-cover bg-no-repeat px-4">
+      <h1>Contact us</h1>
+      <form ref={form} onSubmit={sendEmail}>
+        <div>
+          <input
+            className="form__input w-[80vw]  items-start rounded px-5 py-1.5 outline-none md:w-[600px]"
+            type="text"
+            placeholder="username"
+            id="text"
+            name="name"
+          />
+        </div>
+        <div>
+          <input
+            className="form__input w-full items-start rounded px-5 py-1.5 outline-none"
+            type="email"
+            placeholder="email@example.com"
+            id="email"
+            name="user_email"
+          />
+        </div>
+        <div>
+          <textarea
+            className="textarea w-full items-start rounded px-5 py-1.5 outline-none"
+            placeholder="Type your text here"
+            name="message"
+          />
+        </div>
+        <input
+          className="form__input submit w-[80vw] md:w-[600px]"
+          type="submit"
+          value="Send"
+          onClick={notify}
+        />
+      </form>
+      <ToastContainer />
+    </section>
   );
 }

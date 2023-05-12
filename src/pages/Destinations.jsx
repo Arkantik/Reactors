@@ -13,6 +13,7 @@ import appendData from "../helpers/appendData";
 export default function Destinations() {
   const [destinations, setDestinations] = useState([]);
   const [currentDestinations, setCurrentDestinations] = useState([]);
+  const [originalDestinations, setOriginalDestinations] = useState([]);
 
   useEffect(() => {
     if (localStorage.getItem("destinations")) {
@@ -20,6 +21,7 @@ export default function Destinations() {
         localStorage.getItem("destinations")
       );
       setDestinations(localDestinations);
+      setOriginalDestinations(localDestinations);
     } else {
       const API = import.meta.env.VITE_API;
 
@@ -41,6 +43,7 @@ export default function Destinations() {
           );
           // 4. store filtered and updated data into a state
           setDestinations(updatedCountries);
+          setOriginalDestinations(updatedCountries);
         })
         .catch((err) => {
           console.error(`Error when retrieving data from API: ${err.message}`);
@@ -77,20 +80,26 @@ export default function Destinations() {
     }
   };
 
+  const handleSearch = (e) => {
+    const search = e.target.value.toLowerCase();
+    const filteredDestinations = originalDestinations.filter((destination) => {
+      const lowerCaseName = destination.cities[0].name.toLowerCase();
+      return lowerCaseName.includes(search);
+    });
+    setDestinations(filteredDestinations);
+  };
+
   return (
     <section className="mb-10 grid h-full grid-cols-1 grid-rows-[auto_auto_1fr] px-4">
       <h1 className="flex justify-center">Destinations</h1>
       <div className="mb-4 flex items-center justify-center gap-4">
-        <SearchBar />
+        <SearchBar handleSearch={handleSearch} />
         <FilterBtn filterDestinations={filterDestinations} />
       </div>
-      <ul className="flex flex-wrap justify-center gap-[3vw] overflow-y-auto">
+      <ul className="flex flex-wrap justify-center gap-[2vw] overflow-y-auto">
         {currentDestinations.map((destination, index) => {
           return (
-            <li
-              key={index}
-              // className="drop-shadow-sm	hover:drop-shadow-lg hover:border-neutral-50"
-            >
+            <li key={index}>
               <NavLink to={`/destinations/${destination.id}`}>
                 <Card destination={destination} />
               </NavLink>
