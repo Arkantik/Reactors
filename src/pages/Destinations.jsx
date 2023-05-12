@@ -90,13 +90,13 @@ export default function Destinations() {
 	};
 
 	return (
-		<section className="mb-10 grid h-full grid-cols-1 grid-rows-[auto_auto_1fr] px-4">
+		<section className="mb-10 grid h-full grid-cols-1 grid-rows-[auto_1fr] px-4">
 			<h1 className="flex justify-center">Destinations</h1>
 			<div className="mb-4 flex items-center justify-center gap-4">
 				<SearchBar handleSearch={handleSearch} />
 				<FilterBtn filterDestinations={filterDestinations} />
 			</div>
-			<ul className="flex flex-wrap content-center justify-center gap-16 overflow-y-auto">
+			<ul className="flex flex-wrap justify-center gap-16 overflow-y-auto">
 				{currentDestinations.map((destination, index) => {
 					return (
 						<li key={index}>

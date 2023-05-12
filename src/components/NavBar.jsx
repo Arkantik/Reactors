@@ -14,7 +14,7 @@ export default function Navbar() {
 		<header>
 			<nav className="relative flex items-center justify-between px-4">
 				<div className="z-50 flex items-center gap-4">
-					<NavLink to="/">
+					<NavLink to="/holifun">
 						<img
 							src={Logo}
 							alt="logo HoliFun"
@@ -34,7 +34,7 @@ export default function Navbar() {
 					}`}>
 					<li className="no-underline">
 						<NavLink
-							to="/"
+							to="/holifun"
 							onClick={closeMenu}
 							className={({ isActive }) =>
 								`navlink ${isActive && !isMenuOpen ? "is-active" : ""}`
@@ -44,7 +44,7 @@ export default function Navbar() {
 					</li>
 					<li>
 						<NavLink
-							to="/destinations"
+							to="/holifun/destinations"
 							onClick={closeMenu}
 							className={({ isActive }) =>
 								`navlink ${isActive && !isMenuOpen ? "is-active" : ""}`
@@ -54,7 +54,7 @@ export default function Navbar() {
 					</li>
 					<li>
 						<NavLink
-							to="/contact"
+							to="/holifun/contact"
 							onClick={closeMenu}
 							className={({ isActive }) =>
 								`navlink ${isActive && !isMenuOpen ? "is-active" : ""}`
@@ -64,7 +64,7 @@ export default function Navbar() {
 					</li>
 					<li>
 						<NavLink
-							to="/about"
+							to="/holifun/about"
 							onClick={closeMenu}
 							className={({ isActive }) =>
 								`navlink ${isActive && !isMenuOpen ? "is-active" : ""}`
