@@ -1,110 +1,59 @@
 import { useState, useEffect } from "react";
 
+import Label from "./Label";
+
 import filterBtn from "/assets/icons/filter.svg";
 
-export default function FilterBtn({ cards, setFilteredCards }) {
+export default function FilterBtn({ filterDestinations }) {
   const [isOpen, setIsOpen] = useState(false);
   const [checkedFilter, setCheckedFilter] = useState([]);
+  const regions = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
 
   useEffect(() => {
-    if (cards) {
-      const filtered = cards.filter((card) => {
-        if (checkedFilter.length === 0) {
-          return true;
-        }
-        return checkedFilter.includes(card.region);
-      });
-      setFilteredCards(filtered);
-    }
-  }, [checkedFilter, cards, setFilteredCards]);
+    setCheckedFilter(Array(regions.length).fill(false));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    // pass values back to the parent to filter the locations to be displayed
+    filterDestinations(checkedFilter, regions);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [checkedFilter]);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleFilterChange = (e) => {
-    const region = e.target.value;
-    if (checkedFilter.includes(region)) {
-      setCheckedFilter(checkedFilter.filter((h) => h !== region));
-    } else {
-      setCheckedFilter([...checkedFilter, region]);
-    }
+  const handleFilterChange = (region, isRegionChecked) => {
+    // clone current state
+    const clonedCheckedFilter = [...checkedFilter];
+    // modify the copy
+    const updatedCheckedFiltrer = clonedCheckedFilter.map((el, index) =>
+      index === regions.indexOf(region) ? isRegionChecked : el
+    );
+    // update the state
+    setCheckedFilter(updatedCheckedFiltrer);
   };
 
   return (
-    <div className="flex justify-end relative">
+    <div className="relative flex justify-end">
       <button
         type="button"
-        className="text-gray-800 font-semibold py-1 rounded items-center z-1"
+        className="z-1 items-center rounded py-1 font-semibold text-gray-800"
         onClick={handleToggle}
       >
         <img src={filterBtn} alt="filter button" />
       </button>
       <ul
         className={`${
-          isOpen ? "block" : "hidden"
-        } absolute right-0 top-10 z-10 w-48 py-2 rounded-md shadow-md`}
+          isOpen ? "block md:flex md:items-center" : "hidden"
+        } absolute right-0 top-0 z-10 translate-y-12 rounded-md bg-neutral-500/60 py-2 text-neutral-50 shadow-md backdrop-blur-md md:bottom-0 md:left-0 md:right-full md:w-fit md:translate-x-12 md:translate-y-0 md:text-neutral-900`}
       >
-        <li className="px-4 py-2">
-          <label className="inline-flex items-center">
-            <input
-              type="checkbox"
-              className="form-checkbox"
-              value="Africa"
-              checked={checkedFilter.includes("Africa")}
-              onChange={handleFilterChange}
-            />
-            <span className="ml-2">Africa</span>
-          </label>
-        </li>
-        <li className="px-4 py-2">
-          <label className="inline-flex items-center">
-            <input
-              type="checkbox"
-              className="form-checkbox"
-              value="Americas"
-              checked={checkedFilter.includes("Americas")}
-              onChange={handleFilterChange}
-            />
-            <span className="ml-2">Americas</span>
-          </label>
-        </li>
-        <li className="px-4 py-2">
-          <label className="inline-flex items-center">
-            <input
-              type="checkbox"
-              className="form-checkbox"
-              value="Asia"
-              checked={checkedFilter.includes("Asia")}
-              onChange={handleFilterChange}
-            />
-            <span className="ml-2">Asia</span>
-          </label>
-        </li>
-        <li className="px-4 py-2">
-          <label className="inline-flex items-center">
-            <input
-              type="checkbox"
-              className="form-checkbox"
-              value="Europe"
-              checked={checkedFilter.includes("Europe")}
-              onChange={handleFilterChange}
-            />
-            <span className="ml-2">Europe</span>
-          </label>
-        </li>
-        <li className="px-4 py-2">
-          <label className="inline-flex items-center">
-            <input
-              type="checkbox"
-              className="form-checkbox"
-              value="Oceania"
-              checked={checkedFilter.includes("Oceania")}
-              onChange={handleFilterChange}
-            />
-            <span className="ml-2">Oceania</span>
-          </label>
-        </li>
+        {regions.map((region, index) => (
+          <li key={index} className="px-4 py-2">
+            <Label region={region} handleFilterChange={handleFilterChange} />
+          </li>
+        ))}
       </ul>
     </div>
   );
