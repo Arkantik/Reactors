@@ -11,74 +11,86 @@ import infoDestinations from "../data/data";
 import appendData from "../helpers/appendData";
 
 export default function Destinations() {
-  const [destinations, setDestinations] = useState([]);
+	const [destinations, setDestinations] = useState([]);
+	const [originalDestinations, setOriginalDestinations] = useState([]);
 
-  useEffect(() => {
-    if (localStorage.getItem("destinations")) {
-      const localDestinations = JSON.parse(
-        localStorage.getItem("destinations")
-      );
-      setDestinations(localDestinations);
-    } else {
-      const API = import.meta.env.VITE_API;
+	useEffect(() => {
+		if (localStorage.getItem("destinations")) {
+			const localDestinations = JSON.parse(
+				localStorage.getItem("destinations")
+			);
+			setDestinations(localDestinations);
+			setOriginalDestinations(localDestinations);
+		} else {
+			const API = import.meta.env.VITE_API;
 
-      const controller = new AbortController();
-      const { signal } = controller;
-      let filteredCountries = [],
-        updatedCountries = [];
-      // 1. fetch raw countries data from API (custom hook)
-      axios
-        .get(API + "/all", { signal })
-        .then((res) => {
-          //2. filter data to only retain countries matching the list of desired destinations
-          filteredCountries = filterData(res.data, infoDestinations, "country");
-          // 3. add supplementary info and id to filtered API data
-          updatedCountries = appendData(
-            filteredCountries,
-            infoDestinations,
-            "cities"
-          );
-          // 4. store filtered and updated data into a state
-          setDestinations(updatedCountries);
-        })
-        .catch((err) => {
-          console.error(`Error when retrieving data from API: ${err.message}`);
-        });
+			const controller = new AbortController();
+			const { signal } = controller;
+			let filteredCountries = [],
+				updatedCountries = [];
+			// 1. fetch raw countries data from API (custom hook)
+			axios
+				.get(API + "/all", { signal })
+				.then((res) => {
+					//2. filter data to only retain countries matching the list of desired destinations
+					filteredCountries = filterData(res.data, infoDestinations, "country");
+					// 3. add supplementary info and id to filtered API data
+					updatedCountries = appendData(
+						filteredCountries,
+						infoDestinations,
+						"cities"
+					);
+					// 4. store filtered and updated data into a state
+					setDestinations(updatedCountries);
+					setOriginalDestinations(updatedCountries);
+				})
+				.catch((err) => {
+					console.error(`Error when retrieving data from API: ${err.message}`);
+				});
 
-      return function cleanUp() {
-        controller.abort();
-      };
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }
-  }, []);
+			return function cleanUp() {
+				controller.abort();
+			};
+			// eslint-disable-next-line react-hooks/exhaustive-deps
+		}
+	}, []);
 
-  useEffect(() => {
-    if (destinations.length > 0) {
-      localStorage.setItem("destinations", JSON.stringify(destinations));
-    }
-  }, [destinations]);
+	useEffect(() => {
+		if (destinations.length > 0) {
+			localStorage.setItem("destinations", JSON.stringify(destinations));
+		}
+	}, [destinations]);
 
-  return (
-    <section className="mb-10 h-full grid grid-cols-1 grid-rows-[auto_auto_1fr] px-4">
-      <h1 className="flex justify-center">Destinations</h1>
-      <div className="flex gap-4 justify-center items-center mb-4">
-        <SearchBar />
-        <FilterBtn />
-      </div>
-      <ul className="flex flex-wrap justify-center gap-[3vw] overflow-y-auto">
-        {destinations.map((destination, index) => {
-          return (
-            <li
-              key={index}
-              // className="drop-shadow-sm	hover:drop-shadow-lg hover:border-neutral-50"
-            >
-              <NavLink to={`/destinations/${destination.id}`}>
-                <Card destination={destination} />
-              </NavLink>
-            </li>
-          );
-        })}
-      </ul>
-    </section>
-  );
+	const handleSearch = (e) => {
+		const search = e.target.value.toLowerCase();
+		const filteredDestinations = originalDestinations.filter((destination) => {
+			const lowerCaseName = destination.cities[0].name.toLowerCase();
+			return lowerCaseName.includes(search);
+		});
+		setDestinations(filteredDestinations);
+	};
+
+	return (
+		<section className="mb-10 grid h-full grid-cols-1 grid-rows-[auto_auto_1fr] px-4">
+			<h1 className="flex justify-center">Destinations</h1>
+			<div className="mb-4 flex items-center justify-center gap-4">
+				<SearchBar handleSearch={handleSearch} />
+				<FilterBtn />
+			</div>
+			<ul className="flex flex-wrap justify-center gap-[3vw] overflow-y-auto">
+				{destinations.map((destination, index) => {
+					return (
+						<li
+							key={index}
+							// className="drop-shadow-sm	hover:drop-shadow-lg hover:border-neutral-50"
+						>
+							<NavLink to={`/destinations/${destination.id}`}>
+								<Card destination={destination} />
+							</NavLink>
+						</li>
+					);
+				})}
+			</ul>
+		</section>
+	);
 }
