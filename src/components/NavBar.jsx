@@ -10,7 +10,7 @@ export default function Navbar() {
 	return (
 		<header>
 			<nav className="relative flex items-center justify-between px-4">
-				<div className="z-50">
+				<div className="z-50 flex items-center gap-4">
 					<NavLink to="/">
 						<img
 							src="/assets/images/logo-2.png"
@@ -21,6 +21,7 @@ export default function Navbar() {
 							onClick={closeMenu}
 						/>
 					</NavLink>
+					<h1>HoliFun</h1>
 				</div>
 				<ul
 					className={`gap-16 font-bold no-underline ${
