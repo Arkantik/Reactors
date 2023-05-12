@@ -59,7 +59,6 @@ export default function Home() {
 
   return (
     <section className="h-full grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_1fr_auto] md:grid-rows-[auto_1fr]">
-      {/* <h1 className="text-neutral-50 absolute left-1/2 -translate-x-1/2 pt-8"> */}
       <h1 className="text-center md:col-span-2">
         Find your next holidays destination!
       </h1>
