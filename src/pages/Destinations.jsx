@@ -12,6 +12,7 @@ import appendData from "../helpers/appendData";
 
 export default function Destinations() {
   const [destinations, setDestinations] = useState([]);
+  const [currentDestinations, setCurrentDestinations] = useState([]);
 
   useEffect(() => {
     if (localStorage.getItem("destinations")) {
@@ -55,18 +56,36 @@ export default function Destinations() {
   useEffect(() => {
     if (destinations.length > 0) {
       localStorage.setItem("destinations", JSON.stringify(destinations));
+      setCurrentDestinations(destinations);
     }
   }, [destinations]);
 
+  const filterDestinations = (checks, regions) => {
+    // filter checked regions
+    const checkedRegions = regions.filter((region, index) => checks[index]);
+    if (checkedRegions.length > 0) {
+      // clone the current state
+      const clonedDestinations = [...destinations];
+      // filter only destinations with checked boxes
+      const filteredDestinations = clonedDestinations.filter((el) =>
+        checkedRegions.includes(el.region)
+      );
+      // update the state
+      setCurrentDestinations(filteredDestinations);
+    } else {
+      setCurrentDestinations(destinations);
+    }
+  };
+
   return (
-    <section className="mb-10 h-full grid grid-cols-1 grid-rows-[auto_auto_1fr] px-4">
+    <section className="mb-10 grid h-full grid-cols-1 grid-rows-[auto_auto_1fr] px-4">
       <h1 className="flex justify-center">Destinations</h1>
-      <div className="flex gap-4 justify-center items-center mb-4">
+      <div className="mb-4 flex items-center justify-center gap-4">
         <SearchBar />
-        <FilterBtn />
+        <FilterBtn filterDestinations={filterDestinations} />
       </div>
       <ul className="flex flex-wrap justify-center gap-[3vw] overflow-y-auto">
-        {destinations.map((destination, index) => {
+        {currentDestinations.map((destination, index) => {
           return (
             <li
               key={index}
