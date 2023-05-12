@@ -14,15 +14,14 @@
 /* ______________________________________________________________________ *\
    Custom Tailwind rules
 \* ______________________________________________________________________ */
-
 /* Custom CSS rules for base HTML elements */
 @layer base {
   h1 {
-    @apply text-3xl;
+    @apply text-xl md:text-3xl py-4 font-bold;
   }
 
   h2 {
-    @apply text-xl;
+    @apply text-lg md:text-2xl;
   }
 
   button {
@@ -54,15 +53,12 @@
 /* ______________________________________________________________________ *\
    Custom CSS rules
 \* ______________________________________________________________________ */
-
 /* Code for DevCard */
-
 .card {
   border: #ffd966ff solid 6px;
 }
 
 /* Code for Filter */
-
 .bg-dark {
   background-color: #ffd966ff;
 }

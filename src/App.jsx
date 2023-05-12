@@ -18,7 +18,7 @@ export default function App() {
       <header className="py-2 bg-neutral-900 text-neutral-50">
         <NavBar />
       </header>
-      <main>
+      <main className="max-h-[calc(100vh-98px)] overflow-hidden">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/destinations" element={<Destinations />} />

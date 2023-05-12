@@ -59,17 +59,19 @@ export default function Destinations() {
   }, [destinations]);
 
   return (
-    <section className="mb-10">
-      <h1 className="mb-2 flex justify-center">Destinations</h1>
-      <div className="flex gap-4 justify-center items-center mb-2">
+    <section className="mb-10 h-full grid grid-cols-1 grid-rows-[auto_auto_1fr] px-4">
+      <h1 className="flex justify-center">Destinations</h1>
+      <div className="flex gap-4 justify-center items-center mb-4">
         <SearchBar />
         <FilterBtn />
       </div>
-
-      <ul className="flex flex-wrap justify-center gap-8">
+      <ul className="flex flex-wrap justify-center gap-[3vw] overflow-y-auto">
         {destinations.map((destination, index) => {
           return (
-            <li key={index}>
+            <li
+              key={index}
+              // className="drop-shadow-sm	hover:drop-shadow-lg hover:border-neutral-50"
+            >
               <NavLink to={`/destinations/${destination.id}`}>
                 <Card destination={destination} />
               </NavLink>

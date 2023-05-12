@@ -1,31 +1,31 @@
 [
   {
     "id": "1",
-    "firstname": "Hafsa",
+    "firstname": "Hafsa 🏝️",
     "lastname": "Aït Ouarraou",
     "img": "../assets/images/missing-picture.png"
   },
   {
     "id": "2",
-    "firstname": "Denis",
+    "firstname": "Denis ⛱️",
     "lastname": "Dezest",
     "img": "../assets/images/profile-denis.jpg"
   },
   {
     "id": "3",
-    "firstname": "Jeremy",
+    "firstname": "Jeremy 🍹",
     "lastname": "Dohin",
     "img": "../assets/images/missing-picture.png"
   },
   {
     "id": "4",
-    "firstname": "Badis",
+    "firstname": "Badis ⛵️",
     "lastname": "Beloucif",
     "img": "../assets/images/missing-picture.png"
   },
   {
     "id": "5",
-    "firstname": "Roxane",
+    "firstname": "Roxane 🗺️",
     "lastname": "Belahcene",
     "img": "../assets/images/missing-picture.png"
   }
