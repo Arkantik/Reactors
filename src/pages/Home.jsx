@@ -11,6 +11,8 @@ import createMarkers from "../helpers/createMarkers";
 import Modal from "../components/Modal";
 import markerRenderer from "../components/Globe-ts/markerRenderer";
 
+import Background from "../../public/assets/images/background-2.png";
+
 export default function Home() {
 	/**
 	 * CONSTANTS
@@ -90,7 +92,9 @@ export default function Home() {
 	 * RENDER
 	 */
 	return (
-		<section className="grid h-full grid-cols-1 grid-rows-[auto_1fr_auto] bg-[url('../assets/images/background-2.png')] bg-cover bg-no-repeat px-4 md:grid-cols-2 md:grid-rows-[auto_1fr]">
+		<section
+			className="grid h-full grid-cols-1 grid-rows-[auto_1fr_auto] bg-cover bg-no-repeat px-4 md:grid-cols-2 md:grid-rows-[auto_1fr]"
+			style={{ backgroundImage: `url(${Background})` }}>
 			<h1 className="text-center md:col-span-2">
 				Find your next holidays destination!
 			</h1>

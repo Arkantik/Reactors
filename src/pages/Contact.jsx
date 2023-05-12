@@ -5,6 +5,8 @@ import "./Contact.css";
 
 import "react-toastify/dist/ReactToastify.css";
 
+import Background from "../../public/assets/images/background-about.png";
+
 export default function Contact() {
 	const form = useRef(null);
 
@@ -63,7 +65,9 @@ export default function Contact() {
 	};
 
 	return (
-		<section className="mb-10 grid h-full grid-cols-1 grid-rows-[auto_1fr] bg-[url('../assets/images/background-about.png')] bg-cover bg-no-repeat px-4">
+		<section
+			className="mb-10 grid h-full grid-cols-1 grid-rows-[auto_1fr] bg-cover bg-no-repeat px-4"
+			style={{ backgroundImage: `url(${Background})` }}>
 			<h1 className="text-center">Contact us</h1>
 			<form
 				className="flex flex-col items-center justify-center place-self-center "
