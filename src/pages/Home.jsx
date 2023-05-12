@@ -4,17 +4,19 @@ import { useEffect, useState } from "react";
 import infoDestinations from "../data/data";
 import filterData from "../helpers/filterData";
 import appendData from "../helpers/appendData";
+import createMarkers from "../helpers/createMarkers";
 
 import ReactGlobe from "react-globe";
-import markers from "../components/Globe-ts/markers";
+// import markers from "../components/Globe-ts/markers";
 import markerRenderer from "../components/Globe-ts/markerRenderer";
-import Details from "../components/Globe-jsx/details";
+// import Details from "../components/Globe-jsx/details";
 
 export default function Home() {
   const API = import.meta.env.VITE_API;
 
   const [loading, setLoading] = useState(false);
   const [destinations, setDestinations] = useState([]);
+  const [customMarkers, setCustomMarkers] = useState([]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -48,9 +50,12 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    // save destinations data to local storage
     if (destinations.length > 0) {
       localStorage.setItem("destinations", JSON.stringify(destinations));
     }
+    // create customMarkers from destinations data
+    setCustomMarkers(createMarkers(destinations));
   }, [destinations]);
 
   const options = {
@@ -72,7 +77,8 @@ export default function Home() {
               cameraAutoRotateSpeed="0.01"
               height="90%"
               width="100%"
-              markers={markers}
+              // markers={markers}
+              markers={customMarkers}
               onClickMarker={(marker) => {
                 alert("test!");
                 dispatch({ type: "FOCUS", payload: marker });
