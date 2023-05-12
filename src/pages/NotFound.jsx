@@ -14,13 +14,13 @@ export default function NotFound() {
         </div>
         <p className="text-9xl">4</p>
       </div>
-      <p className="md:text-2xl text-xl">Oops... Already on Vacations!</p>
-      <p className="md:text-2xl text-xl">Maybe You Should Plan For Some Too?</p>
+      <p className="md:text-2xl text-xl">Oops... Already on vacations ⛱️ </p>
+      <p className="md:text-2xl text-xl">What about you?</p>
       <NavLink
         className="mx-auto flex w-fit rounded-full border-2 border-none bg-cyan-500 px-12 py-3 text-lg text-neutral-50"
         to="/"
       >
-        Find My Next Trip
+        Find A Destination
       </NavLink>
     </section>
   );
