@@ -13,22 +13,25 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 export default function App() {
-  return (
-    <div className="wrapper grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto]">
-      <header className="py-2 bg-neutral-900 text-neutral-50">
-        <NavBar />
-      </header>
-      <main className="max-h-[calc(100vh-98px)] overflow-hidden">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/destinations" element={<Destinations />} />
-          <Route path="/destinations/:id" element={<DestinationDetails />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
-  );
+	return (
+		<div className="wrapper grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto]">
+			<header className="bg-neutral-900 py-2 text-neutral-50">
+				<NavBar />
+			</header>
+			<main className="max-h-[calc(100vh-98px)] overflow-hidden">
+				<Routes>
+					<Route path="/holifun" element={<Home />} />
+					<Route path="/holifun/destinations" element={<Destinations />} />
+					<Route
+						path="/holifun/destinations/:id"
+						element={<DestinationDetails />}
+					/>
+					<Route path="/holifun/contact" element={<Contact />} />
+					<Route path="/holifun/about" element={<About />} />
+					<Route path="*" element={<NotFound />} />
+				</Routes>
+			</main>
+			<Footer />
+		</div>
+	);
 }
