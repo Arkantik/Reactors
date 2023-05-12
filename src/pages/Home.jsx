@@ -132,14 +132,9 @@ export default function Home() {
 								<p>
 									{currentDestination.region} | {currentDestination.subregion}
 								</p>
-								<p>
-									lat:
-									{currentDestination.latlng[0]} | long:
-									{currentDestination.latlng[1]}
-								</p>
 								<button
 									type="button"
-									className="mt-2 rounded-full border px-4 py-2 text-sm"
+									className="button mt-2 rounded-full border px-4 py-2 text-sm"
 									onClick={handleConfirmModal}>
 									See More
 								</button>
