@@ -1,5 +1,5 @@
 <!-- Header section -->
-<h1 align="center">HoliFun <img src="./public/assets/favicon/favicon.svg" width="30px" height="30px" alt="logo"></h1>
+<h1 align="center">HoliFun <img src="./public/assets/images/logo-2.png" width="30px" height="30px" alt="logo"></h1>
 
 ### 🧰 Languages & Frameworks used :
 

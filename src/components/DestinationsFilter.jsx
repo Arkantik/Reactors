@@ -1,4 +1,4 @@
-export default function DestinationsFilter({}) {
+export default function DestinationsFilter() {
 	return (
 		<>
 			<input
