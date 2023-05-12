@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleClick = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
     <header>
@@ -17,7 +18,7 @@ export default function Navbar() {
               width="48"
               height="48"
               className="block"
-              onClick={handleClick}
+              onClick={closeMenu}
             />
           </NavLink>
         </div>
@@ -31,7 +32,7 @@ export default function Navbar() {
           <li className="no-underline">
             <NavLink
               to="/"
-              onClick={handleClick}
+              onClick={closeMenu}
               className={({ isActive }) =>
                 `navlink ${isActive && !isMenuOpen ? "is-active" : ""}`
               }
@@ -42,7 +43,7 @@ export default function Navbar() {
           <li>
             <NavLink
               to="/destinations"
-              onClick={handleClick}
+              onClick={closeMenu}
               className={({ isActive }) =>
                 `navlink ${isActive && !isMenuOpen ? "is-active" : ""}`
               }
@@ -53,7 +54,7 @@ export default function Navbar() {
           <li>
             <NavLink
               to="/contact"
-              onClick={handleClick}
+              onClick={closeMenu}
               className={({ isActive }) =>
                 `navlink ${isActive && !isMenuOpen ? "is-active" : ""}`
               }
@@ -64,7 +65,7 @@ export default function Navbar() {
           <li>
             <NavLink
               to="/about"
-              onClick={handleClick}
+              onClick={closeMenu}
               className={({ isActive }) =>
                 `navlink ${isActive && !isMenuOpen ? "is-active" : ""}`
               }
@@ -73,7 +74,7 @@ export default function Navbar() {
             </NavLink>
           </li>
         </ul>
-        <button type="button" className="z-50 md:hidden" onClick={handleClick}>
+        <button type="button" className="z-50 md:hidden" onClick={toggleMenu}>
           <img
             src="/assets/icons/menu-hamburger-umbrella.svg"
             alt="menu hamburger"
