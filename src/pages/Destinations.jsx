@@ -90,9 +90,9 @@ export default function Destinations() {
 	};
 
 	return (
-		<section className="mb-10 grid h-full grid-cols-1 grid-rows-[auto_1fr] px-4">
+		<section className="mb-10 flex h-full flex-col px-4">
 			<h1 className="flex justify-center">Destinations</h1>
-			<div className="mb-4 flex items-center justify-center gap-4">
+			<div className="mb-8 flex items-center justify-center gap-4">
 				<SearchBar handleSearch={handleSearch} />
 				<FilterBtn filterDestinations={filterDestinations} />
 			</div>
