@@ -14,37 +14,128 @@
 /* ______________________________________________________________________ *\
    Custom Tailwind rules
 \* ______________________________________________________________________ */
-
 /* Custom CSS rules for base HTML elements */
 @layer base {
-  h1 {
-    @apply text-3xl;
-  }
+	*,
+	body {
+		text-rendering: geometricPrecision;
+		-webkit-font-smoothing: antialiased;
+	}
 
-  h2 {
-    @apply text-xl;
-  }
+	h1 {
+		@apply py-4 text-xl font-bold md:text-3xl;
+	}
 
-  button {
-    cursor: pointer;
-  }
+	h2 {
+		@apply text-lg md:text-2xl;
+	}
+
+	button {
+		cursor: pointer;
+	}
 }
 
 /* Custom CSS rules for components (.card, .btn, ...) */
 @layer components {
-  .main__container {
-    @apply py-4;
-  }
+	.main__container {
+		@apply py-4;
+	}
+	.navlink {
+		border-bottom: 2px solid transparent;
+		padding: 4px 8px;
+	}
+	.navlink:hover {
+		border-bottom: 1px solid;
+	}
 
-  .navlink:hover {
-    text-decoration: underline;
-  }
+	.modal__overlay {
+		@apply absolute bottom-0 left-[50vw] flex h-fit w-[90vw] -translate-x-1/2 -translate-y-[6vh] items-center justify-center rounded-md bg-neutral-900/20 px-4 py-4 drop-shadow-xl backdrop-blur-md md:left-[100vw] md:right-0 md:top-[50vh] md:max-w-[25%] md:-translate-x-[105%];
+	}
+
+	.modal__content {
+		@apply flex flex-col items-center justify-center gap-2 text-white focus:outline-none;
+	}
 }
 
 /* Custom CSS rules for utilities (.layout, .shadow, ...) */
 @layer utilities {
+	.is-active {
+		color: #84e7eb;
+	}
 }
 
 /* ______________________________________________________________________ *\
    Custom CSS rules
 \* ______________________________________________________________________ */
+/* Code for DevCard */
+.card {
+	border: #ffd966ff solid 6px;
+}
+
+/* Code for Filter */
+.bg-dark {
+	background-color: #ffd966ff;
+}
+
+.header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 12px * 3;
+}
+
+.content {
+	background: rgba(0, 0, 0, 0.05);
+	padding: 12px;
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	margin: 12px * 2 0;
+}
+
+.fixed {
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+.button {
+	background-color: #222222;
+	border: 1px solid #84e7eb;
+	border-radius: 12px * 2;
+	color: #fcdcbf;
+	cursor: pointer;
+	padding: 12px 12px * 2;
+	pointer-events: auto;
+}
+
+.button:hover {
+	background-color: lighten(#222222, 10%);
+}
+
+.globe {
+	outline: none;
+}
+
+@keyframes fade-in {
+	0% {
+		filter: blur(10px);
+		opacity: 0;
+	}
+	100% {
+		filter: blur(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

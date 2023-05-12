@@ -1,0 +1,46 @@
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: calc(100vh - 250px);
+	margin: auto;
+	background-image: url("../assets/images/background-about.png");
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+	color: black;
+}
+
+.textarea {
+	height: 300px;
+	border: 1px solid rgb(111, 110, 110);
+	background: transparent;
+	backdrop-filter: blur(30px);
+}
+
+form input {
+	margin-bottom: 1rem;
+	background: transparent;
+}
+
+.form__input {
+	border: 1px solid rgb(111, 110, 110);
+	border-radius: 5px;
+	margin-bottom: 10px;
+	backdrop-filter: blur(30px);
+}
+
+h1 {
+	margin-bottom: 3rem;
+}
+
+.submit {
+	border: 1px solid rgb(111, 110, 110);
+	backdrop-filter: blur(10px);
+	cursor: pointer;
+}
+
+.submit:hover {
+	background-color: #13aab0;
+	color: white;
+}

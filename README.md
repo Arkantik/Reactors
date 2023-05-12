@@ -1,5 +1,5 @@
 <!-- Header section -->
-<h1 align="center">Name of the project<img src="./public/assets/favicon/favicon.svg" width="30px" height="30px" alt="logo"></h1>
+<h1 align="center">HoliFun <img src="./public/assets/images/logo-2.png" width="30px" height="30px" alt="logo"></h1>
 
 ### 🧰 Languages & Frameworks used :
 
@@ -36,7 +36,6 @@
 - Denis Dezest : https://github.com/ddZ6ii
 - Jeremy Dohin : https://github.com/Arkantik
 - Badis Beloucif : https://github.com/Badis69
-- Roxane Belahcene : https://github.com/Roxyroke
 
 </br>
 

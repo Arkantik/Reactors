@@ -1,0 +1,283 @@
+[
+  {
+    "country": "Thailand",
+    "cities": [
+      {
+        "name": "Bangkok",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/7060081/pexels-photo-7060081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image2": "https://images.pexels.com/photos/1929611/pexels-photo-1929611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://images.pexels.com/photos/1682748/pexels-photo-1682748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image4": "https://images.pexels.com/photos/1374377/pexels-photo-1374377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        "visit": {
+          "place1": "Wat Arun",
+          "place2": "Jim Thompson's House",
+          "place3": "Grand Palace"
+        },
+        "restaurant": {
+          "restaurant1": "The Sixth - 6 Soi Tha Tien, Maharaj Road. Khet Phra Nakhon area",
+          "restaurant2": "Prachak - 1415, Charoen Krung Road, Silom, opposite Robinson's department store",
+          "restaurant3": "Charoen Saeng Silom - 492/6 Soi Charoen Krung 49"
+        },
+        "flag": "https://images.pexels.com/photos/11262194/pexels-photo-11262194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "description": "Thailand is a country located in Southeast Asia, known for its beautiful beaches, temples, delicious cuisine, and friendly people. The capital city is Bangkok, which is a bustling metropolis with a rich history and culture. </br> </br>  The official currency of Thailand is the Thai Baht (THB). As of May 2023, 1 US dollar is equivalent to approximately 31 THB. ATMs are widely available throughout the country, and credit cards are widely accepted in major cities and tourist areas. </br> </br> However, it's always a good idea to have some cash on hand for smaller purchases and markets. Thailand has a tropical climate, with high temperatures and humidity throughout the year. </br> </br> The best time to visit is between November and February, when the weather is dry and cool. March to May is the hottest period, while June to October is the rainy season, with occasional typhoons. </br> </br> Food is a major part of Thai culture, and the country is famous for its delicious cuisine. Some must-try dishes include Pad Thai, Tom Yum Goong, Green Curry, Massaman Curry, and Mango Sticky Rice. ",
+        "weather": "November and February"
+      }
+    ]
+  },
+
+  {
+    "country": "Japan",
+    "cities": [
+      {
+        "name": "Tokyo",
+        "picture": {
+          "image1": "https://www.lyonaeroports.com/sites/default/files/2022-07/Tokyo_header.jpg",
+          "image2": "https://www.civitatis.com/blog/wp-content/uploads/2022/11/calle-akihabara-tokio.jpg",
+          "image3": "https://media.cntraveler.com/photos/62ab85a86df361f5801fd45b/16:9/w_2580,c_limit/Tokyo_GettyImages-1319747119.jpg",
+          "image4": "https://lepetitjournal.com/sites/default/files/2020-05/tour-tokyo-coronavirus-japon.jpg"
+        },
+        "visit": {
+          "place1": "Tsukiji Honganji Temple",
+          "place2": "Nightlife in Shinjuku",
+          "place3": "Nezu Shrine"
+        },
+        "restaurant": {
+          "restaurant1": "Uoriki Kaisen Sushi - 2-24-1 Shibuya, Shibuya City, Tokyo 150-0002",
+          "restaurant2": "Shin Udon - 2-20-16 1F Soma Bldg., Yoyogi, Shibuya, Tokyo 151-0053",
+          "restaurant3": "Yakitori Ton Ton - 2 Chome-1-10 Yurakucho, Chiyoda City, Tokyo 100-0006,"
+        },
+        "flag": "https://cdn.shopify.com/s/files/1/0273/3346/0067/files/drapeau-du-japon_1f990ca4-ff6f-47e2-9ce6-70c423273834.jpg?v=1642330819",
+        "description": "Japan is a country located in East Asia, known for its unique blend of ancient traditions and modern technology. </br> </br> The capital city is Tokyo, which is one of the world's most populous cities and a center for business, culture, and entertainment.The official currency of Japan is the Japanese Yen (JPY). As of May 2023, 1 US dollar is equivalent to approximately 105 JPY. </br> </br> ATMs are widely available throughout the country, and credit cards are widely accepted in major cities and tourist areas. </br> </br> However, it's always a good idea to have some cash on hand for smaller purchases and markets.Japan has a temperate climate, with four distinct seasons.</br> </br> The best time to visit is in the spring (March to May) or autumn (September to November), when the weather is mild and the scenery is beautiful. Summers can be hot and humid, while winters can be cold and snowy, particularly in the northern regions of the country.",
+
+        "weather": "March and April"
+      }
+    ]
+  },
+
+  {
+    "country": "France",
+    "cities": [
+      {
+        "name": "Paris",
+        "picture": {
+          "image1": "https://res.klook.com/image/upload/Mobile/City/swox6wjsl5ndvkv5jvum.jpg",
+          "image2": "https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://media.timeout.com/images/105983530/image.jpg",
+          "image4": "https://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+        },
+        "visit": {
+          "place1": "Eiffel Tower",
+          "place2": "Louvre Museum",
+          "place3": "Versailles Palace"
+        },
+        "restaurant": {
+          "restaurant1": "La Poule Au Pot - 9 rue Vauvilliers, 75001 Paris",
+          "restaurant2": "Le Cadoret - 1 Rue Pradier, 75019 Paris",
+          "restaurant3": "Le Saint Sebastien - 42 rue Saint Sebastien, 75011 Paris"
+        },
+        "flag": "https://images.pexels.com/photos/5781917/pexels-photo-5781917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "description": "France is a Western European country known for its rich history, culture, cuisine, and stunning landscapes. The official currency used in France is the Euro (EUR). </br> </br> As a tourist destination, France offers a diverse range of experiences, from exploring the cosmopolitan city of Paris, to touring the vineyards of Bordeaux, to lounging on the beaches of the French Riviera. </br> </br> The country is also famous for its art museums, historic landmarks, and world-renowned cuisine. </br> </br> The best time to visit France depends on your interests and preferences. Summer (June to August) is the most popular time to visit, particularly for beach holidays and outdoor activities. However, this is also peak tourist season, so expect crowds and higher prices. Spring (March to May) and autumn (September to November) offer milder weather, fewer crowds, and lower prices. Winter (December to February) can be cold and rainy, but it's also a great time to experience the holiday festivities and winter sports. </br> </br> Overall, France is a must-visit destination for any traveler looking for a mix of culture, history, and stunning scenery.",
+
+        "weather": "June and August"
+      }
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "cities": [
+      {
+        "name": "London",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image2": "https://images.pexels.com/photos/230794/pexels-photo-230794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://images.pexels.com/photos/813362/pexels-photo-813362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image4": "https://images.pexels.com/photos/2214035/pexels-photo-2214035.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        },
+        "visit": {
+          "place1": "Buckingham Palace",
+          "place2": "The London Eye",
+          "place3": "Westminster Abbey"
+        },
+        "restaurant": {
+          "restaurant1": "Café Cecilia - 32 Andrews Rd, London E8 4RL",
+          "restaurant2": "Quo Vadis - 26-29 Dean Street, London W1D 3LL",
+          "restaurant3": "St John Marylebone - 98 Marylebone Ln, London W1U 2QA"
+        },
+        "description": "The United Kingdom, commonly referred to as the UK, is a country located in Western Europe. It is composed of four nations: England, Scotland, Wales, and Northern Ireland. </br> </br> The official currency used in the UK is the pound sterling (GBP). </br> </br> As a tourist destination, the UK offers a wealth of cultural and historical attractions, as well as natural wonders. Visitors can explore iconic landmarks such as Buckingham Palace and Big Ben in London, the stunning Scottish Highlands, or the charming countryside villages of the Cotswolds. </br> </br> The best time to visit the UK depends on what you want to see and do. Summer (June to August) is the most popular time to visit, with warmer weather and longer days. </br> </br> However, this is also peak tourist season, so expect larger crowds and higher prices. Spring (March to May) and autumn (September to November) offer milder temperatures, colorful foliage, and fewer crowds. Winter (December to February) can be cold and rainy, but it's also a great time to experience the holiday festivities and winter sports.",
+        "flag": "https://cdn.shopify.com/s/files/1/0364/7792/7564/files/drapeau_anglais_angleterre_gratuit_600x600.jpg?v=1663680041",
+
+        "weather": "September and November"
+      }
+    ]
+  },
+  {
+    "country": "Italy",
+    "cities": [
+      {
+        "name": "Rome",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/532263/pexels-photo-532263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image2": "https://images.pexels.com/photos/753639/pexels-photo-753639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://a.cdn-hotels.com/gdcs/production122/d319/f4b58730-9bea-11e8-a1b5-0242ac110053.jpg",
+          "image4": "https://images.pexels.com/photos/2225442/pexels-photo-2225442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        "visit": {
+          "place1": "Colosseum",
+          "place2": "Roman Forum",
+          "place3": "Trevi Fountain"
+        },
+        "restaurant": {
+          "restaurant1": "Ristorante Dillà - Via Mario de' Fiori, 41, 00187 Roma",
+          "restaurant2": "Roscioli Salumeria con Cucina - Via dei Giubbonari, 21, 00186 Roma",
+          "restaurant3": "Tonnarello - Via della Paglia, 1/2/3, 00153 Roma"
+        },
+        "flag": "https://images.pexels.com/photos/7522/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "description": "Italy is a country located in Southern Europe known for its rich history, culture, art, and cuisine. The official currency used in Italy is the Euro (EUR). </br> </br> As a tourist destination, Italy offers a diverse range of experiences, from exploring the historic landmarks of Rome, to touring the vineyards of Tuscany, to lounging on the beaches of the Amalfi Coast. </br> </br> The country is also famous for its art museums, ancient ruins, and world-renowned cuisine. The best time to visit Italy depends on your interests and preferences. Summer (June to August) is the most popular time to visit, particularly for beach holidays and outdoor activities. </br> </br> However, this is also peak tourist season, so expect larger crowds and higher prices. Spring (March to May) and autumn (September to November) offer milder weather, fewer crowds, and lower prices. Winter (December to February) can be cold and rainy, but it's also a great time to experience the holiday festivities and winter sports in the mountainous regions.",
+
+        "weather": "March and May"
+      }
+    ]
+  },
+  {
+    "country": "Australia",
+    "cities": [
+      {
+        "name": "Canberra",
+        "picture": {
+          "image1": "https://www.australia-australie.com/wp-content/uploads/2017/01/canberra_06.jpg",
+          "image2": "https://cms.canberra.com.au/app/uploads/2022/03/Adam-McGrath-aerial-featured.jpg",
+          "image3": "https://www.momondo.fr/rimg/dimg/56/9d/9b34ca4c-city-1417-1643db6d9ad.jpg?width=1366&height=768&xhint=1491&yhint=1160&crop=true",
+          "image4": "https://cdn.shopify.com/s/files/1/1223/0772/products/pool-of-reflection-australian-war-memorial-canberra_614afca6-ebbd-4568-b204-97c79d49b255_1200x.jpg?v=1566908262"
+        },
+        "visit": {
+          "place1": "The Parliament House",
+          "place2": "Beijing Garden",
+          "place3": "The Australian War Memorial"
+        },
+        "restaurant": {
+          "restaurant1": "Rebel Rebel - 23 Marcus Clarke St, Acton",
+          "restaurant2": "Lilotang - 1 Burbury Cl, Barton",
+          "restaurant3": "The Boat House - Grevillea Park, Menindee Dr, Barton"
+        },
+        "description": "Australia is a country located in the Southern Hemisphere, famous for its stunning natural landscapes, unique wildlife, and laid-back culture. </br> </br> The official currency used in Australia is the Australian dollar (AUD). As a tourist destination, Australia offers a diverse range of experiences, from exploring the iconic landmarks of Sydney, to snorkeling in the Great Barrier Reef, to hiking in the rugged outback. </br> </br> The country is also famous for its beaches, national parks, and wildlife, including kangaroos, koalas, and wallabies. The best time to visit Australia depends on where you plan to go. The summer months (December to February) are the most popular time to visit, particularly for beach holidays and outdoor activities.</br> </br> However, this is also peak tourist season, so expect larger crowds and higher prices. Autumn (March to May) and spring (September to November) offer milder temperatures and fewer crowds. Winter (June to August) can be cold in some areas, but it's also a great time to experience winter sports in the mountainous regions.",
+        "flag": "https://images.pexels.com/photos/1766215/pexels-photo-1766215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+        "weather": "September and November"
+      }
+    ]
+  },
+  {
+    "country": "Egypt",
+    "cities": [
+      {
+        "name": "Cairo",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/3873681/pexels-photo-3873681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image2": "https://images.pexels.com/photos/3243027/pexels-photo-3243027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://images.pexels.com/photos/5609738/pexels-photo-5609738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image4": "https://images.pexels.com/photos/13420332/pexels-photo-13420332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        "visit": {
+          "place1": "The Great Pyramids of Giza",
+          "place2": "Al-Azhar Mosque",
+          "place3": "Egyptian Museum of Antiquities"
+        },
+        "restaurant": {
+          "restaurant1": "Fayruz Lebanese Restaurant - InterContinental Cairo Citystars Omar Ibn El Khattab St., Cairo 11511",
+          "restaurant2": "Nişantaşi - City Stars Mall Phase 1, Level 5, Cairo 11511",
+          "restaurant3": "Al Khal Egyptian Restaurant - InterContinental Cairo Citystars Omar Bin Khattab Street, Cairo 11511"
+        },
+        "description": "Egypt is a country located in North Africa and is famous for its rich history and cultural heritage. The official language spoken in Egypt is Arabic, but English is widely spoken in tourist areas. </br> </br> The official currency of Egypt is the Egyptian Pound (EGP). It is advised that tourists exchange their currency at authorized exchange bureaus or banks to avoid counterfeit notes. </br> </br> The best time to visit Egypt is from October to April, as the weather is mild and comfortable. Summers are scorching hot, so it is recommended to avoid visiting during this time. </br> </br> Egypt is home to some of the world's most famous attractions, including the Great Pyramids of Giza, the Sphinx, the Valley of the Kings, and the temples of Luxor and Karnak. </br> </br> The country also has many museums and cultural sites to explore, such as the Egyptian Museum in Cairo, which houses a vast collection of ancient artifacts and treasures.",
+        "flag": "https://node01.flagstat.net/media/image/1519r.jpg",
+
+        "weather": "March and April"
+      }
+    ]
+  },
+  {
+    "country": "Morocco",
+    "cities": [
+      {
+        "name": "Rabat",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/12504063/pexels-photo-12504063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image2": "https://images.pexels.com/photos/2945595/pexels-photo-2945595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image3": "https://images.pexels.com/photos/9208234/pexels-photo-9208234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image4": "https://images.pexels.com/photos/10203423/pexels-photo-10203423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        "visit": {
+          "place1": "Oudaias Kasbah",
+          "place2": "Hassan Tower",
+          "place3": "Mausoleum of Mohamed V"
+        },
+        "restaurant": {
+          "restaurant1": "Restaurant Golden Fish - Avenue Imam Malek Impasse, BP 450 Souissi Sofitel Rabat Jardin Des Roses, Rabat 10000",
+          "restaurant2": "Cosmopolitan Restaurant - Avenue Ibn Tourmet Angle rue Abbou Abbas El Guerraoui, Rabat 10000",
+          "restaurant3": "Ty Potes - 11 Rue Ghafsa, Rabat 10000"
+        },
+        "description": "Morocco is a country located in North Africa and is known for its vibrant culture, beautiful landscapes, and delicious cuisine. </br> </br> The official languages spoken in Morocco are Arabic and Berber, but French and English are widely spoken in tourist areas. </br> </br> The official currency of Morocco is the Moroccan Dirham (MAD). It is advised that tourists exchange their currency at authorized exchange bureaus or banks to avoid counterfeit notes. </br> </br> The best time to visit Morocco is from March to May or from September to November when the weather is mild and comfortable. Summers can be extremely hot, so it is recommended to avoid visiting during this time. </br> </br> Morocco is a popular tourist destination with many attractions to explore, including the vibrant city of Marrakesh, the blue-washed town of Chefchaouen, the ancient Roman ruins of Volubilis, and the beautiful beaches of Essaouira. </br> </br> The country also has many souks and markets where tourists can find unique souvenirs and local handicrafts.",
+        "flag": "https://media.istockphoto.com/id/1290578898/fr/photo/drapeau-marocain-dans-la-cour-de-la-mosqu%C3%A9e-hassan-ii-%C3%A0-casablanca-maroc.jpg?s=612x612&w=0&k=20&c=2tyqU8c2uXSYlgbMag6QlURG5o5SLmiXyDQXC2U2N4Y=",
+
+        "weather": "June and August"
+      }
+    ]
+  },
+  {
+    "country": "Chile",
+    "cities": [
+      {
+        "name": "Santiago",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/15269467/pexels-photo-15269467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image2": "https://images.pexels.com/photos/2017747/pexels-photo-2017747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "image3": "https://images.pexels.com/photos/14530671/pexels-photo-14530671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "image4": "https://images.pexels.com/photos/1684166/pexels-photo-1684166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        "visit": {
+          "place1": "Spend a morning at one of Santiago's beautiful parks",
+          "place2": "Climb Santa Lucia Hill",
+          "place3": "Take in Santiago's Plaza de Armas and adjacent Metropolitan Cathedral"
+        },
+        "restaurant": {
+          "restaurant1": "Boragó - Av. San José María Escrivá de Balaguer 5970, Vitacura, Santiago, 7640804",
+          "restaurant2": "99 Restaurante - Andrés de Fuenzalida 99, Providencia, Santiago, 7500000",
+          "restaurant3": "Bar La Providencia - Isabel la Católica 4208 , Las Condes, Santiago,"
+        },
+        "description": "Chile is a long and narrow country located in South America, known for its natural beauty, diverse landscapes, and vibrant culture. </br> </br> The official language spoken in Chile is Spanish, but English is widely spoken in tourist areas. </br> </br> The official currency of Chile is the Chilean Peso (CLP). It is advised that tourists exchange their currency at authorized exchange bureaus or banks to avoid counterfeit notes. </br> </br> The best time to visit Chile depends on the region. In general, the best time to visit is during the summer months of December to February when the weather is warm and dry. </br> </br> However, the Atacama Desert is a year-round destination, while the ski resorts in the Andes are best visited from June to August.",
+        "flag": "https://node01.flagstat.net/media/image/2820r.jpg",
+
+        "weather": "September and February"
+      }
+    ]
+  },
+  {
+    "country": "Canada",
+    "cities": [
+      {
+        "name": "Ottawa",
+        "picture": {
+          "image1": "https://images.pexels.com/photos/7328/building-architecture-historical-tower.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "image2": "https://images.pexels.com/photos/3656756/pexels-photo-3656756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "image3": "https://images.pexels.com/photos/11412885/pexels-photo-11412885.jpeg",
+          "image4": "https://images.pexels.com/photos/208749/pexels-photo-208749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        "visit": {
+          "place1": "Parliament Hill and Parliament Buildings",
+          "place2": "Rideau Canal National Historic Site",
+          "place3": "Notre-Dame Cathedral Basilica"
+        },
+        "restaurant": {
+          "restaurant1": "Perch - 300 Preston St 1, Ottawa, ON K1R 7R6",
+          "restaurant2": "Restaurant e18hteen - 18 York St, Ottawa, ON K1N 5T5",
+          "restaurant3": "Stolen Goods Cocktail Bar - 106 Sparks St., Ottawa, ON K1P 5C7"
+        },
+        "description": "Canada is a country located in North America, known for its diverse landscapes, multicultural cities, and friendly people. The official languages spoken in Canada are English and French. </br> </br> The official currency of Canada is the Canadian Dollar (CAD). It is advised that tourists exchange their currency at authorized exchange bureaus or banks to avoid counterfeit notes. </br> </br> The best time to visit Canada depends on the region. In general, the best time to visit is during the summer months of June to August when the weather is warm and pleasant. </br> </br> However, the ski resorts in the Rocky Mountains are best visited from December to March. Canada has many attractions to explore, including the stunning natural landscapes of Banff National Park, the multicultural city of Toronto, the historic city of Quebec, and the charming fishing villages of the East Coast. </br> </br> The country also has many museums and cultural sites to explore, such as the Canadian Museum of History in Ottawa, which showcases the country's rich history and heritage.",
+        "flag": "https://images.pexels.com/photos/3744699/pexels-photo-3744699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+        "weather": "March and May, September and November"
+      }
+    ]
+  }
+]
