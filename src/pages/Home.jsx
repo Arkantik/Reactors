@@ -1,5 +1,6 @@
 import axios from "axios";
 import ReactGlobe from "react-globe";
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import infoDestinations from "../data/data";
@@ -15,6 +16,7 @@ export default function Home() {
    * CONSTANTS
    */
   const API = import.meta.env.VITE_API;
+  const navigate = useNavigate();
   const options = {
     markerRenderer,
   };
@@ -25,6 +27,7 @@ export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [destinations, setDestinations] = useState([]);
   const [customMarkers, setCustomMarkers] = useState([]);
+  const [currentDestination, setCurrentDestination] = useState({});
 
   useEffect(() => {
     const controller = new AbortController();
@@ -72,12 +75,14 @@ export default function Home() {
   const handleOpenModal = () => setIsModalOpen(true);
   const handleCloseModal = () => setIsModalOpen(false);
   const handleConfirmModal = () => {
-    //retieve destination id from focused marker
-    // ...
-    // use a NavLink to go to the dedicated page
-    // ...
+    // redirect to the appropriate page
+    navigate(`/destinations/${currentDestination.id}`);
     // close the modal
     handleCloseModal();
+  };
+  const handleClickMarker = (marker) => {
+    if (destinations)
+      setCurrentDestination(destinations.find((el) => el.id === marker.id));
   };
 
   /**
@@ -102,6 +107,7 @@ export default function Home() {
               width="100%"
               markers={customMarkers}
               onClickMarker={(marker) => {
+                handleClickMarker(marker);
                 handleOpenModal();
                 dispatch({ type: "FOCUS", payload: marker });
               }}
@@ -109,32 +115,45 @@ export default function Home() {
             />
           </div>
 
-          <div className="relative flex grow items-center justify-center md:basis-1/3">
-            <Modal
-              open={isModalOpen}
-              label="Modal"
-              overlayCSS="modal__overlay"
-              contentCSS="modal__content"
-              closeModal={handleCloseModal}
-            >
-              <h2>Destination Name</h2>
-              <p>Destination Info</p>
-              <button
-                type="button"
-                className="rounded-full border px-4 py-2 text-sm"
-                onClick={handleConfirmModal}
+          {currentDestination.name ? (
+            <div className="relative flex grow items-center justify-center md:basis-1/3">
+              <Modal
+                open={isModalOpen}
+                label="Modal"
+                overlayCSS="modal__overlay"
+                contentCSS="modal__content"
+                closeModal={handleCloseModal}
               >
-                See More
-              </button>
-              <button
-                type="button"
-                className="absolute right-2 top-2"
-                onClick={handleCloseModal}
-              >
-                ❌
-              </button>
-            </Modal>
-          </div>
+                <h2>{currentDestination.capital}</h2>
+                <p>
+                  {currentDestination.flag}
+                  {currentDestination.name.common} ({currentDestination.cioc})
+                </p>
+                <p>
+                  {currentDestination.region} | {currentDestination.subregion}
+                </p>
+                <p>
+                  lat:
+                  {currentDestination.latlng[0]} | long:
+                  {currentDestination.latlng[1]}
+                </p>
+                <button
+                  type="button"
+                  className="mt-2 rounded-full border px-4 py-2 text-sm"
+                  onClick={handleConfirmModal}
+                >
+                  See More
+                </button>
+                <button
+                  type="button"
+                  className="absolute right-2 top-2"
+                  onClick={handleCloseModal}
+                >
+                  ❌
+                </button>
+              </Modal>
+            </div>
+          ) : null}
         </div>
       ) : null}
     </section>
