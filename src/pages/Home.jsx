@@ -1,4 +1,5 @@
 import axios from "axios";
+import ReactGlobe from "react-globe";
 import { useEffect, useState } from "react";
 
 import infoDestinations from "../data/data";
@@ -6,15 +7,22 @@ import filterData from "../helpers/filterData";
 import appendData from "../helpers/appendData";
 import createMarkers from "../helpers/createMarkers";
 
-import ReactGlobe from "react-globe";
-// import markers from "../components/Globe-ts/markers";
+import Modal from "../components/Modal";
 import markerRenderer from "../components/Globe-ts/markerRenderer";
-// import Details from "../components/Globe-jsx/details";
 
 export default function Home() {
+  /**
+   * CONSTANTS
+   */
   const API = import.meta.env.VITE_API;
-
+  const options = {
+    markerRenderer,
+  };
+  /**
+   * STATES
+   */
   const [loading, setLoading] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [destinations, setDestinations] = useState([]);
   const [customMarkers, setCustomMarkers] = useState([]);
 
@@ -58,37 +66,74 @@ export default function Home() {
     setCustomMarkers(createMarkers(destinations));
   }, [destinations]);
 
-  const options = {
-    markerRenderer,
+  /**
+   * BEHAVIORS
+   */
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseModal = () => setIsModalOpen(false);
+  const handleConfirmModal = () => {
+    //retieve destination id from focused marker
+    // ...
+    // use a NavLink to go to the dedicated page
+    // ...
+    // close the modal
+    handleCloseModal();
   };
 
+  /**
+   * RENDER
+   */
   return (
-    <section className="h-full grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_1fr_auto] md:grid-rows-[auto_1fr]">
+    <section className="grid h-full grid-cols-1 grid-rows-[auto_1fr_auto] md:grid-cols-2 md:grid-rows-[auto_1fr]">
       <h1 className="text-center md:col-span-2">
         Find your next holidays destination!
       </h1>
+
       {loading ? <p> Loading...</p> : null}
+
       {!loading && destinations ? (
-        <div className="h-full grid grid-cols-1 md:col-span-2 md:flex md:flex-wrap grid-rows-[2fr_1fr] md:grid-rows-[auto]">
-          <div className="flex justify-center items-center md:basis-2/3 md:h-3/5 md:self-center xl:h-4/5 2xl:f-full">
+        <div className="grid h-full grid-cols-1 grid-rows-[2fr_1fr] md:col-span-2 md:flex md:grid-rows-[auto] md:flex-wrap">
+          <div className="flex items-center justify-center md:h-3/5 md:basis-2/3 md:self-center xl:h-4/5 2xl:h-full">
             <ReactGlobe
               globeBackgroundTexture={null}
               ambientLightIntensity="1"
               cameraAutoRotateSpeed="0.01"
               height="90%"
               width="100%"
-              // markers={markers}
               markers={customMarkers}
               onClickMarker={(marker) => {
-                alert("test!");
+                handleOpenModal();
                 dispatch({ type: "FOCUS", payload: marker });
               }}
               options={options}
             />
           </div>
-          <div className="grow flex justify-center items-center md:basis-1/3">
-            {/* <Details /> */}
-            Location for the Modal to be displayed
+
+          <div className="relative flex grow items-center justify-center md:basis-1/3">
+            <Modal
+              open={isModalOpen}
+              label="Modal"
+              overlayCSS="modal__overlay"
+              contentCSS="modal__content"
+              closeModal={handleCloseModal}
+            >
+              <h2>Destination Name</h2>
+              <p>Destination Info</p>
+              <button
+                type="button"
+                className="rounded-full border px-4 py-2 text-sm"
+                onClick={handleConfirmModal}
+              >
+                See More
+              </button>
+              <button
+                type="button"
+                className="absolute right-2 top-2"
+                onClick={handleCloseModal}
+              >
+                ❌
+              </button>
+            </Modal>
           </div>
         </div>
       ) : null}
