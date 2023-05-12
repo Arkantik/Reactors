@@ -1,3 +1,6 @@
+import LinkedIn from "../../public/assets/icons/linkedIn.svg";
+import Github from "../../public/assets/icons/github.svg";
+
 export default function DevCard({ firstname, img, linkedIn, github }) {
 	const redirectToLinkedIn = () => {
 		if (linkedIn) {
@@ -21,20 +24,10 @@ export default function DevCard({ firstname, img, linkedIn, github }) {
 			<h2>{firstname}</h2>
 			<div className="flex gap-4">
 				<button type="button" onClick={redirectToLinkedIn}>
-					<img
-						src="../assets/icons/linkedIn.svg"
-						alt="linkedIn"
-						width="32"
-						height="32"
-					/>
+					<img src={LinkedIn} alt="linkedIn" width="32" height="32" />
 				</button>
 				<button type="button" onClick={redirectToGitHub}>
-					<img
-						src="../assets/icons/github.svg"
-						alt="github"
-						width="32"
-						height="32"
-					/>
+					<img src={Github} alt="github" width="32" height="32" />
 				</button>
 			</div>
 		</>
