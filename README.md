@@ -40,6 +40,6 @@
 </br>
 
 
-### Winner of the method price 🏆
+### Winner of the technique price 🏆
 
 <em><strong>Note</strong>: This project has been created following the first Hackathon (36h) of the Web & Mobile developer certification at WildCodeSchool.</em>
